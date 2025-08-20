@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Grimoire Street • Spell Compendium (1890s)</title>
+<style>
+  :root{
+    --bg:#15181d;          /* page */
+    --panel:#1e232a;       /* main cards */
+    --side:#1b1f25;        /* sidebar */
+    --ink:#eef0f3;         /* text */
+    --muted:#aab0ba;       /* secondary text */
+    --line:#282d35;        /* hairline */
+    --accent:#d3ba7c;      /* bronze */
+    --pill:#262b33;        /* chip */
+    --pill-soft:#222730;   
+    --danger:#ff6b6b;
+  }
+  html,body{background:var(--bg); color:var(--ink); margin:0; overflow-y:auto}
+  body{font-family: "Inter", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial; line-height:1.55}
+  *, *::before, *::after{box-sizing:border-box}
+  .wrap{max-width:1120px; margin:28px auto; padding:0 16px}
+ 
+  /* Header */
+  h1{margin:0 0 2px 0; font-size:clamp(26px,3.2vw,38px); font-weight:700; letter-spacing:.01em; color:var(--accent)}
+  .sub{color:var(--muted); font-size:14px}
+  .rule{height:1px; background:var(--line); margin:16px 0 18px}
+ 
+  /* Layout */
+  .grid{display:grid; grid-template-columns: 300px 1fr; gap:18px; align-items:start}
+  @media(max-width:980px){.grid{grid-template-columns:1fr;}}
+ 
+  /* Sidebar */
+  .side{position:static; align-self:start; background:var(--side); border:1px solid var(--line); border-radius:14px; padding:12px}
+  /* Only stick the sidebar when it comfortably fits the viewport (set by JS via .is-sticky) */
+  @media(min-width:981px){.side.is-sticky{position:sticky; top:12px; will-change:top}}
+  @media(max-width:980px){.side{position:static}}
+  .side h2{margin:0 0 10px 0; font-size:13px; color:var(--muted); letter-spacing:.04em; text-transform:uppercase}
+  .field{display:grid; gap:6px; margin-bottom:12px}
+  .field label{font-size:12px; color:var(--muted)}
+  .input, select{width:100%; background:var(--panel); color:var(--ink); border:1px solid var(--line); border-radius:10px; padding:10px 12px; font-size:14px; line-height:1.2}
+  .input::placeholder{color:#c6cbd3; opacity:.85}
+  .seg{display:flex; gap:8px}
+  .seg button{flex:1; background:var(--pill); border:1px solid var(--line); color:var(--ink); padding:8px 10px; border-radius:999px; cursor:pointer; font-size:13px}
+  .seg button[aria-pressed="true"]{background:var(--accent); color:#0d0e10; font-weight:600}
+  .legend{border-top:1px solid var(--line); margin-top:8px; padding-top:10px}
+  .legend h3{margin:0 0 6px 0; font-size:12px; color:var(--muted); letter-spacing:.03em; text-transform:uppercase}
+  .legend-top{background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:10px 12px; margin:12px 0 18px}
+  .chips{display:flex; flex-wrap:wrap; gap:6px}
+  .chip{background:var(--pill-soft); border:1px solid var(--line); color:#d9dde6; padding:6px 10px; border-radius:999px; font-size:12px}
+  .chip[data-lvl="Beginner"]{color:#cfe8ff}
+  .chip[data-lvl="Intermediate"]{color:#e8d6ff}
+  .chip[data-lvl="Advanced"]{color:#ffe7c7}
+  .chip[data-lvl="Expert"]{color:#ffbdbd}
+ 
+  .tabs{display:flex; flex-direction:column; border-top:1px solid var(--line); margin-top:10px}
+  .tabs button{appearance:none; background:transparent; border:none; text-align:left; padding:10px 12px; border-bottom:1px solid var(--line); cursor:pointer; color:var(--muted); font-size:14px}
+  .tabs button[aria-current="true"]{background:var(--panel); color:var(--accent); font-weight:600}
+ 
+  /* Panel */
+  .panel{background:var(--panel); border:1px solid var(--line); border-radius:14px; overflow:hidden; align-self:start}
+  .panel header{padding:14px; border-bottom:1px solid var(--line)}
+  .panel h3{margin:0; font-size:18px; font-weight:700; letter-spacing:.01em; color:var(--accent)}
+  .how{padding:10px 14px; border-bottom:1px dashed var(--line); color:var(--muted); font-size:14px}
+ 
+  /* List */
+  .list{display:grid}
+  details.item{border-bottom:1px solid var(--line)}
+  details.item[open] summary{background:#1d2128}
+  summary{list-style:none; cursor:pointer; padding:12px 14px; display:grid; grid-template-columns: 1fr auto; gap:10px; align-items:center; scroll-margin-top:16px}
+  summary::-webkit-details-marker{display:none}
+  .name{font-weight:600}
+  .namewrap{min-width:0}
+  .effect-preview{font-size:13px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:2px}
+  .pill{display:inline-block; padding:3px 8px; border-radius:999px; background:var(--pill); border:1px solid var(--line); font-size:12px; color:#cfd5de}
+  .meta{display:flex; gap:8px; align-items:center}
+  .body{padding:10px 14px 14px 14px}
+  .grid-2{display:grid; grid-template-columns:1fr 1fr; gap:12px}
+  @media(max-width:700px){.grid-2{grid-template-columns:1fr}}
+  .spec{background:#1d2128; border:1px solid var(--line); border-radius:10px; padding:10px}
+  .spec dt{font-size:12px; color:#c9ced8}
+  .spec dd{margin:0 0 8px 0}
+  .notes{color:#b7bdc7; font-size:13px; margin-top:8px}
+  .empty{padding:16px; color:#b7bdc7}
+ 
+  .footer{margin-top:16px; color:#b7bdc7; font-size:12px; text-align:center}
+  a{color:var(--accent)}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Grimoire Street • Spell Compendium</h1>
+      <div class="sub">Hogwarts Legacy era (1890s). Canon-only by default. Toggle OC to include approved originals.</div>
+    </header>
+    <div class="rule" aria-hidden="true"></div>
+ 
+    <section class="legend legend-top" aria-label="Legend">
+      <h3>Legend • who can cast?</h3>
+      <div class="chips">
+        <span class="chip" data-lvl="Beginner">Beginner → Years 1–2</span>
+        <span class="chip" data-lvl="Intermediate">Intermediate → Years 3–4</span>
+        <span class="chip" data-lvl="Advanced">Advanced → Years 5–7</span>
+        <span class="chip" data-lvl="Expert">Expert → Post‑grad only</span>
+        <span class="chip">Dark Arts: staff‑approved plots only</span>
+      </div>
+    </section>
+ 
+    <div class="grid">
+      <aside class="side" role="complementary">
+        <h2>Browse</h2>
+        <div class="field">
+          <label for="q">Search</label>
+          <input id="q" class="input" type="text" placeholder="Search name, effect, creator, pronunciation, wand" />
+        </div>
+        <div class="field">
+          <label for="dif">Difficulty</label>
+          <select id="dif">
+            <option value="">All</option>
+            <option>Beginner</option>
+            <option>Intermediate</option>
+            <option>Advanced</option>
+            <option>Expert</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="year">Year group</label>
+          <select id="year">
+            <option value="">Any</option>
+            <option value="y12">Years 1–2</option>
+            <option value="y34">Years 3–4</option>
+            <option value="y57">Years 5–7</option>
+            <option value="post">Post‑grad / Adult</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>Mode</label>
+          <div class="seg" role="group" aria-label="Mode">
+            <button id="modeCanon" aria-pressed="true">Canon</button>
+            <button id="modeAll" aria-pressed="false">Canon + OC</button>
+          </div>
+        </div>
+ 
+        <div class="tabs" role="tablist" aria-label="Subjects"></div>
+      </aside>
+ 
+      <main class="panel" role="region" aria-live="polite">
+        <header>
+          <h3 id="subjectTitle">Charms</h3>
+        </header>
+        <div class="how"><strong>RP use:</strong> Choose a subject, then search or filter. Keep casting within your character’s allowed year group/difficulty. Dark Arts & Unforgivables require admin‑approved plots. OC spells show only in Canon+OC mode after staff approval.</div>
+        <section id="list" class="list"></section>
+      </main>
+    </div>
+ 
+    <p class="footer">Report missing or era‑inaccurate spells to staff.</p>
+  </div>
+ 
+<script>
+/***********************
+ * SUBJECTS & DATA
+ ***********************/
+const SUBJECTS = [
+  'Charms','Transfiguration','Defence Against the Dark Arts','Jinxes & Hexes (Dueling)','Dark Arts (Forbidden)','Herbology','Divination','Arithmancy','Ancient Runes','Ancient Magic & Specialised Arts','Player‑Created Spells'
+];
+ 
+// Helper to DRY rows
+const S = (name,difficulty,creator,pron,wand,effect,notes='')=>({name,difficulty,creator,pron,wand,effect,notes});
+ 
+// ---- CANON DATA (from your list, condensed into fields) ----
+const CANON = {
+  'Charms':[
+    // Basic Utility
+    S('Aberto','Beginner','Unknown','Ah-bare-toh','Point at lock','Opens simple locks/doors.','Lighter than Alohomora.'),
+    S('Accio','Intermediate','Ancient','AK-ee-oh / AK-see-oh / AS-see-oh','Point/beckon; name object','Summons objects to the caster.','Cannot summon living beings directly; wards may block.'),
+    S('Aguamenti','Intermediate','Unknown','AH-gwah-MEN-tee','Firm jab toward vessel','Produces a jet of clean water.'),
+    S('Alarte Ascendare','Intermediate','Unknown','a-LAR-tay a-SEN-der-ay','Upward flick','Shoots target into the air.'),
+    S('Alohomora','Beginner','Disputed (Merlin/Smudgling/Malagasy)','ah-LOH-ho-MOR-ah','Tap lock; gentle twist','Unlocks doors/objects.','Counter: Colloportus.'),
+    S('Alohomora Duo','Intermediate','Unknown','ah-LOH-ho-MOR-ah DOO-oh','As Alohomora; stronger motion','Opens complex locks.'),
+    S('Anapneo','Intermediate','Unknown','ah-NAP-nee-oh','Aim at throat; steady focus','Clears a blocked airway.'),
+    S('Aparecium','Intermediate','Unknown','AH-par-EE-see-um','Short arc over text','Reveals invisible writing.'),
+    S('Appare Vestigium','Advanced','Unknown','ah-PAR-ay ves-TEE-jee-um','Wide sweep over area','Reveals traces/footprints of magic.'),
+    S('Arania Exumai','Intermediate','Unknown','ah-RAHN-ee-a EKS-su-may','Direct at spiders','Repels spiders and arachnids.'),
+    S('Arresto Momentum','Advanced','Daisy Pennifold (1711)','ah-REST-oh mo-MEN-tum','Open‑palm halt gesture','Slows moving targets; cushions falls.'),
+    S('Ascendio','Intermediate','Unknown','ah-SEN-dee-oh','Upward thrust','Propels caster upward; surfaces from water.'),
+    S('Avenseguim','Advanced','Unknown','ah-ven-SEH-gwim','Enchant object; focus on quarry','Turns an object into a tracker.'),
+    S('Baubillious','Intermediate','Unknown','baw-BILL-ee-us','Point; crisp flick','Bolt of white light (damaging).'),
+ 
+    // Cleaning & Maintenance
+    S('Scourgify','Beginner','Unknown','','Point at grime','Cleans objects thoroughly.'),
+    S('Tergeo','Beginner','Unknown','','Point at liquid','Siphons/cleans liquids.'),
+    S('Impervius','Beginner','Unknown','','Even coat over surface','Repels water/mist.'),
+ 
+    // Explosive/Destructive
+    S('Bombarda','Advanced','Unknown','bom-BAR-dah','Snap to target','Creates small explosion.'),
+    S('Bombarda Maxima','Advanced','Unknown','BOM-bar-dah MAX-ih-mah','Forceful motion','Large, wall‑breaking explosion.'),
+    S('Cistem Aperio','Intermediate','Unknown','SIS-tem uh-PE-ree-o','Strike at latch','Blasts open chests/boxes.'),
+    S('Deprimo','Advanced','Unknown','deh-PREEM-oh','Punch ground','Blasts holes in ground/floors.'),
+ 
+    // Movement & Manipulation
+    S('Carpe Retractum','Intermediate','Unknown','CAR-pay ruh-TRACK-tum','Cast rope of light; pull','Pulls objects to caster or caster to anchor.'),
+    S('Depulso','Intermediate','Unknown','deh-PUL-soh','Pushing motion','Banishes an object away.','Counter to Accio.'),
+    S('Descendo','Beginner','Unknown','deh-SEN-doh','Downward motion','Forces object to descend.'),
+    S('Mobiliarbus','Intermediate','Unknown','','Guide tree with wand','Moves trees.'),
+    S('Mobilicorpus','Intermediate','Unknown','','Lift and guide body','Levitates unconscious bodies.'),
+    S('Wingardium Leviosa','Beginner','Ancient','wing-GAR-dee-um levi-OH-sa','Swish‑and‑flick','Levitates objects.','Emphasis on “OH”.'),
+ 
+    // Size Alteration
+    S('Engorgio','Intermediate','Unknown','en-GOR-jee-oh','Direct at object','Enlarges objects.'),
+    S('Reducio','Intermediate','Unknown','','Direct at object','Shrinks objects.'),
+    S('Diminuendo','Intermediate','Unknown','dim-in-YEW-en-DOUGH','Point at target','Forces target to shrink.'),
+ 
+    // Concealment & Detection
+    S('Cave Inimicum','Advanced','Unknown','CAH-vay uh-NIM-i-kuhm','Trace perimeter','Hides those within from others.'),
+    S('Caterwauling Charm','Advanced','Unknown','','Sweep over area','Sets off shriek when perimeter is breached.'),
+    S('Disillusionment Charm','Advanced','Unknown','','Tap head; focus on blending','Chameleon‑like concealment.'),
+    S('Homenum Revelio','Intermediate','Unknown','','Circular cast','Reveals human presence.'),
+    S('Revelio','Intermediate','Unknown','','Point at suspect object','General revealing charm.'),
+    S('Specialis Revelio','Intermediate','Unknown','','Point at object','Reveals properties/enchantments.'),
+ 
+    // Repair & Construction
+    S('Reparo','Beginner','Unknown','','Circle then tap','Repairs broken objects.','Dark damage may resist.'),
+    S('Oculus Reparo','Beginner','Unknown','','Tap spectacles','Repairs glasses specifically.'),
+    S('Brackium Emendo','Expert','Unknown','BRA-key-um ee-MEN-doh','Point at limb','Intended to heal broken bones.','Dangerous if miscast.'),
+    S('Erecto','Beginner','Unknown','eh-RECK-toh','Raise poles; fix lines','Erects tents/structures.'),
+ 
+    // Specialized Object
+    S('Capacious Extremis','Advanced','Unknown','ca-PAY-shus ex-TREEM-us','Trace container seam','Expands internal dimensions.','Often lightens contents.'),
+    S('Colloportus','Beginner','Unknown','cul-loh-POR-tus','Tap bolt; twist shut','Locks doors/objects.','Countered by Alohomora.'),
+    S('Colovaria','Beginner','Unknown','co-loh-VA-riah','Paint air toward target','Changes colour of target.'),
+    S('Circumrota','Intermediate','Unknown','SIR-cum-roh-tuh','Small circle','Rotates objects.'),
+    S('Duro','Advanced','Unknown','DYOO-roh','Firm thrust','Turns objects to stone.'),
+    S('Epoximise','Intermediate','Unknown','ee-POX-i-mise','Wand between items','Strongly adheres two objects.'),
+ 
+    // Communication & Silence
+    S('Silencio','Intermediate','Unknown','','Aim at throat','Renders target silent.'),
+    S('Sonorus','Intermediate','Unknown','','Aim at own throat','Amplifies voice.'),
+    S('Waddiwasi','Beginner','Unknown','','Flick at small item','Shoots small object at target.'),
+ 
+    // Counter/Neutralisation & Recovery
+    S('Finite (Finite Incantatem)','Intermediate','Unknown','','Sweep over area','Ends ongoing magical effects.'),
+    S('Rennervate','Intermediate','Unknown','','Tap sternum','Revives a stunned person.'),
+ 
+    // Environmental
+    S('Atmospheric Charm','Advanced','Unknown','','Broad swaths','Manipulates local weather.'),
+    S('Drought Charm','Beginner','Unknown','','Fan across puddle','Dries small bodies of water.'),
+    S('Bubble-Head Charm','Advanced','Unknown','','Circle around head','Air bubble for breathing/odours.'),
+    S('Bubble Spell','Beginner','Unknown','','Gentle swirl','Creates decorative bubbles.'),
+ 
+    // Light & Fire
+    S('Lumos','Beginner','Ancient','','Tap wand tip','Creates light.'),
+    S('Nox','Beginner','Unknown','','Counter‑tap','Extinguishes Lumos.'),
+    S('Incendio','Intermediate','Unknown','in-SEN-dee-oh','Sharp arc toward fuel','Creates fire.','Variants: Duo/Tria'),
+ 
+    // Emotional & Mental
+    S('Cheering Charm','Intermediate','Felix Summerbee','—','Direct at person; happy focus','Induces cheerfulness.','Overuse → hysteria.'),
+    S('Confundo (Confundus Charm)','Intermediate','Unknown','con-FUN-doh','Direct at mind','Causes confusion.'),
+ 
+    // Protective barriers
+    S('Protego','Intermediate','Ancient','—','Defensive sweep','Shield charm blocking spells.','Variants: Horribilis/Maxima/Totalum'),
+    S('Anti-Apparition Charm','Advanced','Unknown','—','Complex ward over area','Prevents Apparition in an area.'),
+    S('Anti-Disapparition Jinx','Advanced','Unknown','—','Lay trap over area','Prevents Disapparition; trapping.'),
+    S('Age Line','Expert','Albus Dumbledore','—','Draw circle boundary','Restricts access by age.'),
+ 
+    // Miscellaneous utility / healing / restraint
+    S('Ebublio (Ebublio Jinx)','Intermediate','Unknown','ee-BUB-lee-oh','Encapsulating arc','Traps target in a bubble.'),
+    S('Episkey','Beginner','Unknown','ee-PIS-key','Tap wound','Heals minor injuries.'),
+    S('Extinguishing Spell','Beginner','Unknown','—','Sweep over flame','Puts out fires.'),
+    S('Ferula','Beginner','Unknown','fer-ROOL-lah','Bandage‑wrapping motion','Conjures bandages/splints.'),
+    S('Riddikulus','Beginner','Unknown','—','Direct at boggart; think funny','Forces a boggart into a ridiculous form.')
+  ],
+ 
+  'Transfiguration':[
+    // Animal transformation
+    S('Animagus Transformation','Expert','Ancient','—','Ritual; years of training','Human to animal transformation.','Ministry registration required.'),
+    S('Amato Animo Animato Animagus','Expert','Unknown','(incantation as written)','Hand over heart; sunrise/sundown','Incantation during Animagus process.'),
+    S('Avifors','Intermediate','Unknown','AH-vi-fors','Point; spiral visualising birds','Transforms target into a bird.'),
+    S('Draconifors','Intermediate','Unknown','drah-KOH-nih-fors','Firm arc; strong visual','Transforms target into a (mini) dragon.','Taught c. 3rd year.'),
+    S('Ducklifors','Beginner','Unknown','DUCK-lih-fors','Point; flick','Transforms target into a duck.'),
+    S('Lapifors','Beginner','Unknown','—','Point; flick','Transforms target into a rabbit.'),
+    S('Vera Verto','Intermediate','Unknown','—','Tap animal three times','Transforms animals into goblets.'),
+ 
+    // Object to Object
+    S('Desk Into Pig','Advanced','Unknown','—','Point; visualise pig','Turns desks into pigs.'),
+    S('Cauldron to Sieve','Intermediate','Unknown','—','Point; intent','Turns cauldrons into sieves.'),
+    S('Cauldron to Badger','Intermediate','Unknown','—','Point; intent','Turns cauldrons into badgers.'),
+ 
+    // Conjuration & Creation
+    S('Avis (Bird‑Conjuring)','Intermediate','Unknown','AH-viss','Flick from wand tip','Conjures a flock of birds.','Offensive with Oppugno.'),
+    S('Orchideous','Beginner','Unknown','—','Small flourish','Conjures flowers.'),
+    S('Serpensortia','Advanced','Unknown','—','Whip‑like cast','Conjures a real snake.'),
+    S('Incarcerous','Intermediate','Unknown','—','Whip toward target','Conjures ropes to bind target.'),
+    S('Arrow‑shooting Spell','Advanced','Unknown','—','Bow‑like draw','Fires arrows from the wand.','Banned at Quidditch since 1894.'),
+ 
+    // Vanishment & Elimination
+    S('Evanesco','Advanced','Unknown','ev-an-ES-koh','Open palm; fading motion','Vanishes objects to non‑being.'),
+    S('Evanesce','Advanced','Unknown','ev-an-ES-key','—','Vanishes a target.','Likely same as Evanesco.'),
+    S('Deletrius','Intermediate','Unknown','deh-LEE-tree-us','Point at Priori image','Erases Reverse/echo spell images.'),
+ 
+    // Size & Form alteration
+    S('Engorgio Skullus','Advanced','Unknown','in-GORE-jee-oh SKUH-las','Direct at head','Enlarges skull grotesquely.','Counter: Redactum Skullus.'),
+    S('Crinus Muto','Intermediate','Unknown','—','Comb‑like stroke','Changes hair colour/style.'),
+ 
+    // Switching & Exchange
+    S('Switch Spell','Intermediate','Unknown','—','Point between two objects','Exchanges properties between objects.'),
+    S('Inanimatus Conjurus','Advanced','Unknown','—','Complex figures','Conjures inanimate objects.')
+  ],
+ 
+  'Defence Against the Dark Arts':[
+    // Protective
+    S('Expecto Patronum','Advanced','Ancient','ecks-PECK-toh pah-TROH-num','Defensive stance; happiest memory','Conjures Patronus vs Dementors/Lethifolds.'),
+    S('Salvio Hexia','Advanced','Unknown','—','Perimeter sweep','Protects area against hexes.'),
+    S('Repello Muggletum','Advanced','Unknown','—','Wide warding arcs','Repels Muggles from an area.'),
+ 
+    // Stunning & Immobilisation (taught/used defensively)
+    S('Stupefy','Intermediate','Unknown','—','Straight shot','Stuns/unconscious.','Counter: Rennervate'),
+    S('Petrificus Totalus','Intermediate','Unknown','—','Snap to centre mass','Full body‑bind; immobilises.'),
+ 
+    // Healing/Recovery
+    S('Anapneo','Intermediate','Unknown','ah-NAP-nee-oh','Aim at throat','Clears a choking victim’s airway.'),
+ 
+    // Detection/Counter‑concealment
+    S('Aparecium (anti‑concealment)','Intermediate','Unknown','AH-par-EE-see-um','Arc over object','Reveals hidden messages/objects.'),
+    S('Appare Vestigium','Advanced','Unknown','ah-PAR-ay ves-TEE-jee-um','Sweep area','Reveals traces of magic in an area.'),
+ 
+    // Offensive knowledge for defence (use restricted in school)
+    S('Conjunctivitis Curse','Advanced','Unknown','—','Aim at eyes','Irritates eyes; can swell shut.'),
+    S('Combat Bolt','Intermediate','Unknown','—','Point and fire','Projects energy bolt.')
+  ],
+ 
+  'Jinxes & Hexes (Dueling)':[
+    // Jinxes & Hexes commonly used in dueling (not inherently Dark Arts)
+    S('Unknown Dangling Jinx','Intermediate','Unknown','—','Upward yank','Hangs target upside‑down by ankle.'),
+    S('Unknown Tongue‑Binding Jinx','Advanced','Unknown','—','Clamp at mouth','Prevents speech by magical means.'),
+    S('Flipendo (Knockback Jinx)','Beginner','Unknown','—','Pushing motion','Knocks target backward.'),
+    S('Everte Statum','Intermediate','Unknown','ee-VER-tay STAH-tum','Sharp strike','Throws victim backward.'),
+    S('Densaugeo','Intermediate','Unknown','den-SAW-jee-oh','Aim at teeth','Rapidly grows teeth.'),
+    S('Furnunculus','Intermediate','Unknown','—','Point at skin','Causes boils.'),
+    S('Anteoculatia','Intermediate','Unknown','an-tee-oh-kyoo-LAY-chee-ah','Aim at head','Grows antlers on target.'),
+    S('Jelly‑Legs Jinx','Beginner','Unknown','—','Flick at legs','Wobbly, unstable legs.'),
+    S('Tarantallegra','Intermediate','Unknown','—','Flick at feet','Forces uncontrollable dancing.'),
+    S('Rictusempra','Beginner','Unknown','—','Quick tickling flick','Tickling; disarms via laughter.'),
+    S('Calvorio','Intermediate','Unknown','cal-VOR-ee-oh','Aim at hair','Removes hair completely.'),
+    S('Colloshoo','Beginner','Unknown','CAWL-low-shoo','Point at shoes','Sticks shoes to the ground.'),
+    S('Entomorphis','Advanced','Unknown','en-TOE-morph-is','Sweeping morphing arc','Temporary insectoid transformation.'),
+    // moved from Forbidden: disruptive/dangerous at school but not inherent dark rites
+    S('Broom Jinx','Advanced','Unknown','—','Maintain eye contact','Broom tries to throw rider; needs eye contact.'),
+    S('Babbling Curse','Intermediate','Unknown','—','Aim at head','Uncontrollable babbling.'),
+    S('Ear‑shrivelling Curse','Intermediate','Unknown','—','Aim at ears','Ears shrivel.'),
+    S('Cornflake Skin Spell','Intermediate','Unknown','—','—','Skin appears coated in cornflakes.'),
+    S('Cascading Jinx','Advanced','Unknown','—','Cast into crowd','Strikes multiple targets.'),
+    S('Deterioration Hex','Advanced','Unknown','—','Sapping gesture','Weakens stamina/energy.')
+  ],
+ 
+  'Dark Arts (Forbidden)':[
+    // Spells outright forbidden to cast at Hogwarts (inherently malevolent/lethal or destructive)
+    S('Avada Kedavra','Expert','Ancient dark','ah-VAH-dah keh-DAV-rah','Direct aim; murderous intent','Instant death.','Absolutely forbidden.'),
+    S('Crucio (Cruciatus)','Expert','Ancient dark','KROO-see-oh','Direct; desire to harm','Excruciating torture.','Absolutely forbidden.'),
+    S('Imperio (Imperius)','Expert','Ancient dark','im-PEER-ee-oh','Smooth arc toward eyes','Total mind control.','Absolutely forbidden.'),
+    S('Antonin Dolohov’s Curse','Advanced','Unknown dark wizard','—','Particular slash','Potentially lethal dark curse.'),
+    S('Unknown Slashing Curse','Advanced','Unknown','—','Cutting sweep','Causes deep slashing wounds.','EXTREMELY dangerous; students must never attempt.'),
+    S('Entrail‑Expelling Curse','Expert','Urquhart Rackharrow','—','Strike at abdomen','Expels entrails.','Extremely dark.'),
+    S('Confringo','Advanced','Unknown','kon-FRING-goh','Snap to target; flare','Fiery blasting curse.'),
+    S('Expulso','Advanced','Unknown','ecks-PUHL-soh','Punching motion','Pressure‑based explosion.'),
+    S('Defodio','Advanced','Unknown','deh-FOH-dee-oh','Drilling spiral','Gouges stone/earth.')
+  ],
+ 
+  'Herbology':[
+    S('Herbivicus','Intermediate','Unknown','—','Gentle spiral over plants','Accelerates plant growth.'),
+    S('Celescere','Advanced','Unknown','—','Broad sweeps across greenhouse','Accelerates greenhouse growth.')
+  ],
+ 
+  'Divination':[
+    S('Crystal Ball Gazing (Scrying)','Beginner','Ancient practice','—','Gaze in meditative state','Visions of future/distant events.'),
+    S('Tea Leaf Reading (Tasseomancy)','Beginner','Ancient practice','—','Read cup after drinking','Interprets future from tea‑leaf patterns.'),
+    S('Palmistry','Beginner','Ancient practice','—','Examine palm lines','Reads character/future from hand.'),
+    S('Astrology','Intermediate','Ancient practice','—','Chart stars/planets','Divines from celestial patterns.')
+  ],
+ 
+  'Arithmancy':[
+    S('Numerological Prediction Spells','Advanced','Unknown','—','Compute + cast','Divination by magical numbers.'),
+    S('Mathematical Enhancement Charms','Intermediate','Unknown','—','Cast on work/tools','Aids complex calculations.'),
+    S('Probability Manipulation','Advanced','Unknown','—','Complex numerical spellwork','Influences likelihood of events.')
+  ],
+ 
+  'Ancient Runes':[
+    S('Rune‑based Spells','Advanced','Ancient civilisations','—','Carve/write runes; channel','Permanent enchantments via runes.'),
+    S('Protective Rune Sequences','Advanced','Ancient civilisations','—','Arrange specific patterns','Defensive wards using runes.')
+  ],
+ 
+  'Ancient Magic & Specialised Arts':[
+    // Ancient magic / interactions
+    S('Ancient Magic Finishers','Expert','Ancient','—','Channel repository power','Extremely powerful combat strikes.'),
+    S('Repository Magic','Expert','Ancient','—','Interact with repositories','Access/manipulate ancient stored magic.'),
+    S('Goblin Magic Interactions','Advanced','Various','—','Specific handling gestures','Techniques for goblin‑made objects.'),
+ 
+    // Transport & communication
+    S('Apparition','Expert','Unknown','—','Turn on the spot','Teleportation; license required.','Risk of splinching.'),
+    S('Portkey Creation (Portus)','Expert','Unknown','POR-tus','Tap object; binding gesture','Turns an object into a Portkey.'),
+    S('Floo Network Spells','Intermediate','Ignatia Wildsmith (13th c.)','—','Throw Floo powder; speak destination','Travel/communicate via fireplaces.'),
+ 
+    // Advanced protective / vows
+    S('Fidelius Charm','Expert','Unknown','—','Secret Keeper ritual','Hides a secret within a person.'),
+    S('Unbreakable Vow','Expert','Unknown','—','Ritual with witness','Binding oath; death if broken.'),
+ 
+    // Memory / mind
+    S('False Memory Charm','Advanced','Unknown','—','Point at head; project false scene','Implants false memories.'),
+    S('Obliviate (Memory Charm)','Advanced','Unknown','oh-BLIV-ee-ate','Point at temple; focus on memory','Erases specific memories.'),
+ 
+    // Musical & artistic
+    S('Cantis (Singing Charm)','Intermediate','Unknown','CAN-tiss','Point and cast','Forces target to sing uncontrollably.'),
+    S('Piertotum Locomotor','Advanced','Unknown','—','Aim at statues/armour','Animates statues and suits of armour.')
+  ],
+ 
+  'Player‑Created Spells':[]
+};
+ 
+// OC container (empty by default)
+const OC = { 'Charms':[], 'Transfiguration':[], 'Defence Against the Dark Arts':[], 'Dark Arts (Forbidden)':[], 'Herbology':[], 'Divination':[], 'Arithmancy':[], 'Ancient Runes':[], 'Ancient Magic & Specialised Arts':[], 'Player‑Created Spells':[] };
+ 
+/***********************
+ * APP
+ ***********************/
+const $ = s=>document.querySelector(s);
+const sideTabs = document.querySelector('.tabs');
+const listEl = $('#list');
+const subjectTitle = $('#subjectTitle');
+const sideEl = document.querySelector('.side');
+ 
+// Make sidebar sticky only when it fits the viewport to avoid scroll jank
+function updateSticky(){
+  const fits = window.innerWidth >= 981 && (sideEl.scrollHeight + 24) <= window.innerHeight;
+  sideEl.classList.toggle('is-sticky', fits);
+}
+ 
+const state = { q:'', dif:'', year:'', subject: SUBJECTS[0], oc:false };
+ 
+function buildTabs(){
+  sideTabs.innerHTML='';
+  SUBJECTS.forEach(s=>{
+    const b=document.createElement('button');
+    b.textContent=s; b.setAttribute('aria-current', String(state.subject===s));
+    b.addEventListener('click', ()=>{ state.subject=s; render(); });
+    sideTabs.appendChild(b);
+  });
+}
+ 
+function dataFor(subject){
+  const canon = CANON[subject]||[];
+  const oc = state.oc ? (OC[subject]||[]) : [];
+  return [...canon.map(x=>({...x, oc:false})), ...oc.map(x=>({...x, oc:true}))];
+}
+ 
+function allowedByYear(dif){
+  if(!state.year) return true;
+  const lvl = dif||'';
+  switch(state.year){
+    case 'y12': return lvl==='Beginner';
+    case 'y34': return ['Beginner','Intermediate'].includes(lvl);
+    case 'y57': return ['Beginner','Intermediate','Advanced'].includes(lvl);
+    case 'post': return ['Beginner','Intermediate','Advanced','Expert'].includes(lvl);
+    default: return true;
+  }
+}
+ 
+function matches(sp){
+  if(state.dif && sp.difficulty!==state.dif) return false;
+  if(!allowedByYear(sp.difficulty)) return false;
+  if(state.q){
+    const blob=((sp.name||'')+' '+(sp.effect||'')+' '+(sp.creator||'')+' '+(sp.pron||'')+' '+(sp.wand||'')+' '+(sp.notes||'')).toLowerCase();
+    if(!blob.includes(state.q)) return false;
+  }
+  return true;
+}
+ 
+function makeRow(sp){
+  const it=document.createElement('details'); it.className='item';
+  const sum=document.createElement('summary');
+  const name=document.createElement('div'); name.className='name'; name.textContent=sp.name;
+  const nameWrap=document.createElement('div'); nameWrap.className='namewrap'; nameWrap.appendChild(name);
+  const preview=document.createElement('div'); preview.className='effect-preview'; preview.textContent=sp.effect||'—';
+  nameWrap.appendChild(preview);
+ 
+  const meta=document.createElement('div'); meta.className='meta';
+  const pill=document.createElement('span'); pill.className='pill'; pill.textContent=sp.difficulty||'—';
+  meta.appendChild(pill);
+  if(sp.oc){ const oc=document.createElement('span'); oc.className='pill'; oc.textContent='OC'; meta.appendChild(oc); }
+  const creator=document.createElement('span'); creator.className='pill'; creator.textContent=sp.creator||'—'; meta.appendChild(creator);
+ 
+  sum.append(nameWrap, meta);
+ 
+  const body=document.createElement('div'); body.className='body';
+  const specs=document.createElement('div'); specs.className='spec grid-2';
+  specs.innerHTML=`
+    <dl>
+      <dt>Pronunciation</dt><dd>${sp.pron||'—'}</dd>
+      <dt>Wand movement</dt><dd>${sp.wand||'—'}</dd>
+    </dl>
+    <dl>
+      <dt>Effect</dt><dd>${sp.effect||'—'}</dd>
+      <dt>Notes</dt><dd class="notes">${sp.notes||''}</dd>
+    </dl>`;
+  body.appendChild(specs);
+  it.append(sum, body);
+  return it;
+}
+ 
+function render(){
+  [...sideTabs.children].forEach(btn=> btn.setAttribute('aria-current', String(btn.textContent===state.subject)));
+  subjectTitle.textContent = state.subject;
+  const items = dataFor(state.subject).filter(matches).sort((a,b)=> a.name.localeCompare(b.name));
+  listEl.innerHTML='';
+  if(!items.length){ const d=document.createElement('div'); d.className='empty'; d.textContent='No entries. Add spells to the data or loosen filters.'; listEl.appendChild(d); return; }
+  items.forEach(sp=> listEl.appendChild(makeRow(sp)));
+}
+ 
+// Controls
+$('#q').addEventListener('input', e=>{ state.q=e.target.value.trim().toLowerCase(); render(); });
+$('#dif').addEventListener('change', e=>{ state.dif=e.target.value; render(); });
+$('#year').addEventListener('change', e=>{ state.year=e.target.value; render(); });
+$('#modeCanon').addEventListener('click', ()=>{ state.oc=false; $('#modeCanon').setAttribute('aria-pressed','true'); $('#modeAll').setAttribute('aria-pressed','false'); render(); });
+$('#modeAll').addEventListener('click', ()=>{ state.oc=true; $('#modeAll').setAttribute('aria-pressed','true'); $('#modeCanon').setAttribute('aria-pressed','false'); render(); });
+ 
+// Boot
+buildTabs();
+updateSticky();
+window.addEventListener('resize', updateSticky);
+render();
+</script>
+</body>
+</html>
+
