@@ -1,0 +1,1610 @@
+{
+  "Charms": [
+    {
+      "name": "Aberto",
+      "difficulty": "Beginner",
+      "creator": "Unknown",
+      "pron": "Ah-bare-toh",
+      "wand": "Point at lock",
+      "effect": "Opens simple locks/doors.",
+      "notes": "Lighter than Alohomora.",
+      "oc": false
+    },
+    {
+      "name": "Accio",
+      "difficulty": "Intermediate",
+      "creator": "Ancient",
+      "pron": "AK-ee-oh / AK-see-oh / AS-see-oh",
+      "wand": "Point/beckon; name object",
+      "effect": "Summons objects to the caster.",
+      "notes": "Cannot summon living beings directly; wards may block.",
+      "oc": false
+    },
+    {
+      "name": "Aguamenti",
+      "difficulty": "Intermediate",
+      "creator": "Unknown",
+      "pron": "AH-gwah-MEN-tee",
+      "wand": "Firm jab toward vessel",
+      "effect": "Produces a jet of clean water.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Alarte Ascendare",
+      "difficulty": "Intermediate",
+      "creator": "Unknown",
+      "pron": "a-LAR-tay a-SEN-der-ay",
+      "wand": "Upward flick",
+      "effect": "Shoots target into the air.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Alohomora",
+      "difficulty": "Beginner",
+      "creator": "Disputed (Merlin/Smudgling/Malagasy)",
+      "pron": "ah-LOH-ho-MOR-ah",
+      "wand": "Tap lock; gentle twist",
+      "effect": "Unlocks doors/objects.",
+      "notes": "Counter: Colloportus.",
+      "oc": false
+    },
+    {
+      "name": "Alohomora Duo",
+      "difficulty": "Intermediate",
+      "creator": "Unknown",
+      "pron": "ah-LOH-ho-MOR-ah DOO-oh",
+      "wand": "As Alohomora; stronger motion",
+      "effect": "Opens complex locks.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Anapneo",
+      "difficulty": "Intermediate",
+      "creator": "Unknown",
+      "pron": "ah-NAP-nee-oh",
+      "wand": "Aim at throat; steady focus",
+      "effect": "Clears a blocked airway.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Aparecium",
+      "difficulty": "Intermediate",
+      "creator": "Unknown",
+      "pron": "AH-par-EE-see-um",
+      "wand": "Short arc over text",
+      "effect": "Reveals invisible writing.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Appare Vestigium",
+      "difficulty": "Advanced",
+      "creator": "Unknown",
+      "pron": "ah-PAR-ay ves-TEE-jee-um",
+      "wand": "Wide sweep over area",
+      "effect": "Reveals traces/footprints of magic.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Arania Exumai",
+      "difficulty": "Intermediate",
+      "creator": "Unknown",
+      "pron": "ah-RAHN-ee-a EKS-su-may",
+      "wand": "Direct at spiders",
+      "effect": "Repels spiders and arachnids.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Arresto Momentum",
+      "difficulty": "Advanced",
+      "creator": "Daisy Pennifold (1711)",
+      "pron": "ah-REST-oh mo-MEN-tum",
+      "wand": "Open-palm halt gesture",
+      "effect": "Slows moving targets; cushions falls.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Ascendio",
+      "difficulty": "Intermediate",
+      "creator": "Unknown",
+      "pron": "ah-SEN-dee-oh",
+      "wand": "Upward thrust",
+      "effect": "Propels caster upward; surfaces from water.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Avenseguim",
+      "difficulty": "Advanced",
+      "creator": "Unknown",
+      "pron": "ah-ven-SEH-gwim",
+      "wand": "Enchant object; focus on quarry",
+      "effect": "Turns an object into a tracker.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Baubillious",
+      "difficulty": "Intermediate",
+      "creator": "Unknown",
+      "pron": "baw-BILL-ee-us",
+      "wand": "Point; crisp flick",
+      "effect": "Bolt of white light (damaging).",
+      "notes": "",
+      "oc": false
+    },
+
+    /* Cleaning & Maintenance */
+    {
+      "name": "Scourgify",
+      "difficulty": "Beginner",
+      "creator": "Unknown",
+      "pron": "",
+      "wand": "Point at grime",
+      "effect": "Cleans objects thoroughly.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Tergeo",
+      "difficulty": "Beginner",
+      "creator": "Unknown",
+      "pron": "",
+      "wand": "Point at liquid",
+      "effect": "Siphons/cleans liquids.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Impervius",
+      "difficulty": "Beginner",
+      "creator": "Unknown",
+      "pron": "",
+      "wand": "Even coat over surface",
+      "effect": "Repels water/mist.",
+      "notes": "",
+      "oc": false
+    },
+
+    /* Explosive/Destructive */
+    {
+      "name": "Bombarda",
+      "difficulty": "Advanced",
+      "creator": "Unknown",
+      "pron": "bom-BAR-dah",
+      "wand": "Snap to target",
+      "effect": "Creates small explosion.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Bombarda Maxima",
+      "difficulty": "Advanced",
+      "creator": "Unknown",
+      "pron": "BOM-bar-dah MAX-ih-mah",
+      "wand": "Forceful motion",
+      "effect": "Large, wall-breaking explosion.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Cistem Aperio",
+      "difficulty": "Intermediate",
+      "creator": "Unknown",
+      "pron": "SIS-tem uh-PE-ree-o",
+      "wand": "Strike at latch",
+      "effect": "Blasts open chests/boxes.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Deprimo",
+      "difficulty": "Advanced",
+      "creator": "Unknown",
+      "pron": "deh-PREEM-oh",
+      "wand": "Punch ground",
+      "effect": "Blasts holes in ground/floors.",
+      "notes": "",
+      "oc": false
+    },
+
+    /* Movement & Manipulation */
+    {
+      "name": "Carpe Retractum",
+      "difficulty": "Intermediate",
+      "creator": "Unknown",
+      "pron": "CAR-pay ruh-TRACK-tum",
+      "wand": "Cast rope of light; pull",
+      "effect": "Pulls objects to caster or caster to anchor.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Depulso",
+      "difficulty": "Intermediate",
+      "creator": "Unknown",
+      "pron": "deh-PUL-soh",
+      "wand": "Pushing motion",
+      "effect": "Banishes an object away.",
+      "notes": "Counter to Accio.",
+      "oc": false
+    },
+    {
+      "name": "Descendo",
+      "difficulty": "Beginner",
+      "creator": "Unknown",
+      "pron": "deh-SEN-doh",
+      "wand": "Downward motion",
+      "effect": "Forces object to descend.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Mobiliarbus",
+      "difficulty": "Intermediate",
+      "creator": "Unknown",
+      "pron": "",
+      "wand": "Guide tree with wand",
+      "effect": "Moves trees.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Mobilicorpus",
+      "difficulty": "Intermediate",
+      "creator": "Unknown",
+      "pron": "",
+      "wand": "Lift and guide body",
+      "effect": "Levitates unconscious bodies.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Wingardium Leviosa",
+      "difficulty": "Beginner",
+      "creator": "Ancient",
+      "pron": "wing-GAR-dee-um levi-OH-sa",
+      "wand": "Swish-and-flick",
+      "effect": "Levitates objects.",
+      "notes": "Emphasis on “OH”.",
+      "oc": false
+    },
+
+    /* Size Alteration */
+    {
+      "name": "Engorgio",
+      "difficulty": "Intermediate",
+      "creator": "Unknown",
+      "pron": "en-GOR-jee-oh",
+      "wand": "Direct at object",
+      "effect": "Enlarges objects.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Reducio",
+      "difficulty": "Intermediate",
+      "creator": "Unknown",
+      "pron": "",
+      "wand": "Direct at object",
+      "effect": "Shrinks objects.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Diminuendo",
+      "difficulty": "Intermediate",
+      "creator": "Unknown",
+      "pron": "dim-in-YEW-en-DOUGH",
+      "wand": "Point at target",
+      "effect": "Forces target to shrink.",
+      "notes": "",
+      "oc": false
+    },
+
+    /* Concealment & Detection */
+    {
+      "name": "Cave Inimicum",
+      "difficulty": "Advanced",
+      "creator": "Unknown",
+      "pron": "CAH-vay uh-NIM-i-kuhm",
+      "wand": "Trace perimeter",
+      "effect": "Hides those within from others.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Caterwauling Charm",
+      "difficulty": "Advanced",
+      "creator": "Unknown",
+      "pron": "",
+      "wand": "Sweep over area",
+      "effect": "Sets off shriek when perimeter is breached.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Disillusionment Charm",
+      "difficulty": "Advanced",
+      "creator": "Unknown",
+      "pron": "",
+      "wand": "Tap head; focus on blending",
+      "effect": "Chameleon-like concealment.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Homenum Revelio",
+      "difficulty": "Intermediate",
+      "creator": "Unknown",
+      "pron": "",
+      "wand": "Circular cast",
+      "effect": "Reveals human presence.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Revelio",
+      "difficulty": "Intermediate",
+      "creator": "Unknown",
+      "pron": "",
+      "wand": "Point at suspect object",
+      "effect": "General revealing charm.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Specialis Revelio",
+      "difficulty": "Intermediate",
+      "creator": "Unknown",
+      "pron": "",
+      "wand": "Point at object",
+      "effect": "Reveals properties/enchantments.",
+      "notes": "",
+      "oc": false
+    },
+
+    /* Repair & Construction */
+    {
+      "name": "Reparo",
+      "difficulty": "Beginner",
+      "creator": "Unknown",
+      "pron": "",
+      "wand": "Circle then tap",
+      "effect": "Repairs broken objects.",
+      "notes": "Dark damage may resist.",
+      "oc": false
+    },
+    {
+      "name": "Oculus Reparo",
+      "difficulty": "Beginner",
+      "creator": "Unknown",
+      "pron": "",
+      "wand": "Tap spectacles",
+      "effect": "Repairs glasses specifically.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Brackium Emendo",
+      "difficulty": "Expert",
+      "creator": "Unknown",
+      "pron": "BRA-key-um ee-MEN-doh",
+      "wand": "Point at limb",
+      "effect": "Intended to heal broken bones.",
+      "notes": "Dangerous if miscast.",
+      "oc": false
+    },
+    {
+      "name": "Erecto",
+      "difficulty": "Beginner",
+      "creator": "Unknown",
+      "pron": "eh-RECK-toh",
+      "wand": "Raise poles; fix lines",
+      "effect": "Erects tents/structures.",
+      "notes": "",
+      "oc": false
+    },
+
+    /* Specialized Object */
+    {
+      "name": "Capacious Extremis",
+      "difficulty": "Advanced",
+      "creator": "Unknown",
+      "pron": "ca-PAY-shus ex-TREEM-us",
+      "wand": "Trace container seam",
+      "effect": "Expands internal dimensions.",
+      "notes": "Often lightens contents.",
+      "oc": false
+    },
+    {
+      "name": "Colloportus",
+      "difficulty": "Beginner",
+      "creator": "Unknown",
+      "pron": "cul-loh-POR-tus",
+      "wand": "Tap bolt; twist shut",
+      "effect": "Locks doors/objects.",
+      "notes": "Countered by Alohomora.",
+      "oc": false
+    },
+    {
+      "name": "Colovaria",
+      "difficulty": "Beginner",
+      "creator": "Unknown",
+      "pron": "co-loh-VA-riah",
+      "wand": "Paint air toward target",
+      "effect": "Changes colour of target.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Circumrota",
+      "difficulty": "Intermediate",
+      "creator": "Unknown",
+      "pron": "SIR-cum-roh-tuh",
+      "wand": "Small circle",
+      "effect": "Rotates objects.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Duro",
+      "difficulty": "Advanced",
+      "creator": "Unknown",
+      "pron": "DYOO-roh",
+      "wand": "Firm thrust",
+      "effect": "Turns objects to stone.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Epoximise",
+      "difficulty": "Intermediate",
+      "creator": "Unknown",
+      "pron": "ee-POX-i-mise",
+      "wand": "Wand between items",
+      "effect": "Strongly adheres two objects.",
+      "notes": "",
+      "oc": false
+    },
+
+    /* Communication & Silence */
+    {
+      "name": "Silencio",
+      "difficulty": "Intermediate",
+      "creator": "Unknown",
+      "pron": "",
+      "wand": "Aim at throat",
+      "effect": "Renders target silent.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Sonorus",
+      "difficulty": "Intermediate",
+      "creator": "Unknown",
+      "pron": "",
+      "wand": "Aim at own throat",
+      "effect": "Amplifies voice.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Waddiwasi",
+      "difficulty": "Beginner",
+      "creator": "Unknown",
+      "pron": "",
+      "wand": "Flick at small item",
+      "effect": "Shoots small object at target.",
+      "notes": "",
+      "oc": false
+    },
+
+    /* Counter/Neutralisation & Recovery */
+    {
+      "name": "Finite (Finite Incantatem)",
+      "difficulty": "Intermediate",
+      "creator": "Unknown",
+      "pron": "",
+      "wand": "Sweep over area",
+      "effect": "Ends ongoing magical effects.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Rennervate",
+      "difficulty": "Intermediate",
+      "creator": "Unknown",
+      "pron": "",
+      "wand": "Tap sternum",
+      "effect": "Revives a stunned person.",
+      "notes": "",
+      "oc": false
+    },
+
+    /* Environmental */
+    {
+      "name": "Atmospheric Charm",
+      "difficulty": "Advanced",
+      "creator": "Unknown",
+      "pron": "",
+      "wand": "Broad swaths",
+      "effect": "Manipulates local weather.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Drought Charm",
+      "difficulty": "Beginner",
+      "creator": "Unknown",
+      "pron": "",
+      "wand": "Fan across puddle",
+      "effect": "Dries small bodies of water.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Bubble-Head Charm",
+      "difficulty": "Advanced",
+      "creator": "Unknown",
+      "pron": "",
+      "wand": "Circle around head",
+      "effect": "Air bubble for breathing/odours.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Bubble Spell",
+      "difficulty": "Beginner",
+      "creator": "Unknown",
+      "pron": "",
+      "wand": "Gentle swirl",
+      "effect": "Creates decorative bubbles.",
+      "notes": "",
+      "oc": false
+    },
+
+    /* Light & Fire */
+    {
+      "name": "Lumos",
+      "difficulty": "Beginner",
+      "creator": "Ancient",
+      "pron": "",
+      "wand": "Tap wand tip",
+      "effect": "Creates light.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Nox",
+      "difficulty": "Beginner",
+      "creator": "Unknown",
+      "pron": "",
+      "wand": "Counter-tap",
+      "effect": "Extinguishes Lumos.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Incendio",
+      "difficulty": "Intermediate",
+      "creator": "Unknown",
+      "pron": "in-SEN-dee-oh",
+      "wand": "Sharp arc toward fuel",
+      "effect": "Creates fire.",
+      "notes": "Variants: Duo/Tria",
+      "oc": false
+    },
+
+    /* Emotional & Mental */
+    {
+      "name": "Cheering Charm",
+      "difficulty": "Intermediate",
+      "creator": "Felix Summerbee",
+      "pron": "—",
+      "wand": "Direct at person; happy focus",
+      "effect": "Induces cheerfulness.",
+      "notes": "Overuse → hysteria.",
+      "oc": false
+    },
+    {
+      "name": "Confundo (Confundus Charm)",
+      "difficulty": "Intermediate",
+      "creator": "Unknown",
+      "pron": "con-FUN-doh",
+      "wand": "Direct at mind",
+      "effect": "Causes confusion.",
+      "notes": "",
+      "oc": false
+    },
+
+    /* Protective barriers */
+    {
+      "name": "Protego",
+      "difficulty": "Intermediate",
+      "creator": "Ancient",
+      "pron": "—",
+      "wand": "Defensive sweep",
+      "effect": "Shield charm blocking spells.",
+      "notes": "Variants: Horribilis/Maxima/Totalum",
+      "oc": false
+    },
+    {
+      "name": "Anti-Apparition Charm",
+      "difficulty": "Advanced",
+      "creator": "Unknown",
+      "pron": "—",
+      "wand": "Complex ward over area",
+      "effect": "Prevents Apparition in an area.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Anti-Disapparition Jinx",
+      "difficulty": "Advanced",
+      "creator": "Unknown",
+      "pron": "—",
+      "wand": "Lay trap over area",
+      "effect": "Prevents Disapparition; trapping.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Age Line",
+      "difficulty": "Expert",
+      "creator": "Albus Dumbledore",
+      "pron": "—",
+      "wand": "Draw circle boundary",
+      "effect": "Restricts access by age.",
+      "notes": "",
+      "oc": false
+    },
+
+    /* Misc utility / healing / restraint */
+    {
+      "name": "Ebublio (Ebublio Jinx)",
+      "difficulty": "Intermediate",
+      "creator": "Unknown",
+      "pron": "ee-BUB-lee-oh",
+      "wand": "Encapsulating arc",
+      "effect": "Traps target in a bubble.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Episkey",
+      "difficulty": "Beginner",
+      "creator": "Unknown",
+      "pron": "ee-PIS-key",
+      "wand": "Tap wound",
+      "effect": "Heals minor injuries.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Extinguishing Spell",
+      "difficulty": "Beginner",
+      "creator": "Unknown",
+      "pron": "—",
+      "wand": "Sweep over flame",
+      "effect": "Puts out fires.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Ferula",
+      "difficulty": "Beginner",
+      "creator": "Unknown",
+      "pron": "fer-ROOL-lah",
+      "wand": "Bandage-wrapping motion",
+      "effect": "Conjures bandages/splints.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Riddikulus",
+      "difficulty": "Beginner",
+      "creator": "Unknown",
+      "pron": "—",
+      "wand": "Direct at boggart; think funny",
+      "effect": "Forces a boggart into a ridiculous form.",
+      "notes": "",
+      "oc": false
+    }
+  ],
+
+  "Transfiguration": [
+    {
+      "name": "Animagus Transformation",
+      "difficulty": "Expert",
+      "creator": "Ancient",
+      "pron": "—",
+      "wand": "Ritual; years of training",
+      "effect": "Human to animal transformation.",
+      "notes": "Ministry registration required.",
+      "oc": false
+    },
+    {
+      "name": "Amato Animo Animato Animagus",
+      "difficulty": "Expert",
+      "creator": "Unknown",
+      "pron": "(incantation as written)",
+      "wand": "Hand over heart; sunrise/sundown",
+      "effect": "Incantation during Animagus process.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Avifors",
+      "difficulty": "Intermediate",
+      "creator": "Unknown",
+      "pron": "AH-vi-fors",
+      "wand": "Point; spiral visualising birds",
+      "effect": "Transforms target into a bird.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Draconifors",
+      "difficulty": "Intermediate",
+      "creator": "Unknown",
+      "pron": "drah-KOH-nih-fors",
+      "wand": "Firm arc; strong visual",
+      "effect": "Transforms target into a (mini) dragon.",
+      "notes": "Taught c. 3rd year.",
+      "oc": false
+    },
+    {
+      "name": "Ducklifors",
+      "difficulty": "Beginner",
+      "creator": "Unknown",
+      "pron": "DUCK-lih-fors",
+      "wand": "Point; flick",
+      "effect": "Transforms target into a duck.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Lapifors",
+      "difficulty": "Beginner",
+      "creator": "Unknown",
+      "pron": "—",
+      "wand": "Point; flick",
+      "effect": "Transforms target into a rabbit.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Vera Verto",
+      "difficulty": "Intermediate",
+      "creator": "Unknown",
+      "pron": "—",
+      "wand": "Tap animal three times",
+      "effect": "Transforms animals into goblets.",
+      "notes": "",
+      "oc": false
+    },
+
+    /* Object to Object */
+    {
+      "name": "Desk Into Pig",
+      "difficulty": "Advanced",
+      "creator": "Unknown",
+      "pron": "—",
+      "wand": "Point; visualise pig",
+      "effect": "Turns desks into pigs.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Cauldron to Sieve",
+      "difficulty": "Intermediate",
+      "creator": "Unknown",
+      "pron": "—",
+      "wand": "Point; intent",
+      "effect": "Turns cauldrons into sieves.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Cauldron to Badger",
+      "difficulty": "Intermediate",
+      "creator": "Unknown",
+      "pron": "—",
+      "wand": "Point; intent",
+      "effect": "Turns cauldrons into badgers.",
+      "notes": "",
+      "oc": false
+    },
+
+    /* Conjuration & Creation */
+    {
+      "name": "Avis (Bird-Conjuring)",
+      "difficulty": "Intermediate",
+      "creator": "Unknown",
+      "pron": "AH-viss",
+      "wand": "Flick from wand tip",
+      "effect": "Conjures a flock of birds.",
+      "notes": "Offensive with Oppugno.",
+      "oc": false
+    },
+    {
+      "name": "Orchideous",
+      "difficulty": "Beginner",
+      "creator": "Unknown",
+      "pron": "—",
+      "wand": "Small flourish",
+      "effect": "Conjures flowers.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Serpensortia",
+      "difficulty": "Advanced",
+      "creator": "Unknown",
+      "pron": "—",
+      "wand": "Whip-like cast",
+      "effect": "Conjures a real snake.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Incarcerous",
+      "difficulty": "Intermediate",
+      "creator": "Unknown",
+      "pron": "—",
+      "wand": "Whip toward target",
+      "effect": "Conjures ropes to bind target.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Arrow-shooting Spell",
+      "difficulty": "Advanced",
+      "creator": "Unknown",
+      "pron": "—",
+      "wand": "Bow-like draw",
+      "effect": "Fires arrows from the wand.",
+      "notes": "Banned at Quidditch since 1894.",
+      "oc": false
+    },
+
+    /* Vanishment & Elimination */
+    {
+      "name": "Evanesco",
+      "difficulty": "Advanced",
+      "creator": "Unknown",
+      "pron": "ev-an-ES-koh",
+      "wand": "Open palm; fading motion",
+      "effect": "Vanishes objects to non-being.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Evanesce",
+      "difficulty": "Advanced",
+      "creator": "Unknown",
+      "pron": "ev-an-ES-key",
+      "wand": "—",
+      "effect": "Vanishes a target.",
+      "notes": "Likely same as Evanesco.",
+      "oc": false
+    },
+    {
+      "name": "Deletrius",
+      "difficulty": "Intermediate",
+      "creator": "Unknown",
+      "pron": "deh-LEE-tree-us",
+      "wand": "Point at Priori image",
+      "effect": "Erases Reverse/echo spell images.",
+      "notes": "",
+      "oc": false
+    },
+
+    /* Size & Form alteration */
+    {
+      "name": "Engorgio Skullus",
+      "difficulty": "Advanced",
+      "creator": "Unknown",
+      "pron": "in-GORE-jee-oh SKUH-las",
+      "wand": "Direct at head",
+      "effect": "Enlarges skull grotesquely.",
+      "notes": "Counter: Redactum Skullus.",
+      "oc": false
+    },
+    {
+      "name": "Crinus Muto",
+      "difficulty": "Intermediate",
+      "creator": "Unknown",
+      "pron": "—",
+      "wand": "Comb-like stroke",
+      "effect": "Changes hair colour/style.",
+      "notes": "",
+      "oc": false
+    },
+
+    /* Switching & Exchange */
+    {
+      "name": "Switch Spell",
+      "difficulty": "Intermediate",
+      "creator": "Unknown",
+      "pron": "—",
+      "wand": "Point between two objects",
+      "effect": "Exchanges properties between objects.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Inanimatus Conjurus",
+      "difficulty": "Advanced",
+      "creator": "Unknown",
+      "pron": "—",
+      "wand": "Complex figures",
+      "effect": "Conjures inanimate objects.",
+      "notes": "",
+      "oc": false
+    }
+  ],
+
+  "Defence Against the Dark Arts": [
+    /* Protective */
+    {
+      "name": "Expecto Patronum",
+      "difficulty": "Advanced",
+      "creator": "Ancient",
+      "pron": "ecks-PECK-toh pah-TROH-num",
+      "wand": "Defensive stance; happiest memory",
+      "effect": "Conjures Patronus vs Dementors/Lethifolds.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Salvio Hexia",
+      "difficulty": "Advanced",
+      "creator": "Unknown",
+      "pron": "—",
+      "wand": "Perimeter sweep",
+      "effect": "Protects area against hexes.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Repello Muggletum",
+      "difficulty": "Advanced",
+      "creator": "Unknown",
+      "pron": "—",
+      "wand": "Wide warding arcs",
+      "effect": "Repels Muggles from an area.",
+      "notes": "",
+      "oc": false
+    },
+
+    /* Stunning & Immobilisation */
+    {
+      "name": "Stupefy",
+      "difficulty": "Intermediate",
+      "creator": "Unknown",
+      "pron": "—",
+      "wand": "Straight shot",
+      "effect": "Stuns/unconscious.",
+      "notes": "Counter: Rennervate",
+      "oc": false
+    },
+    {
+      "name": "Petrificus Totalus",
+      "difficulty": "Intermediate",
+      "creator": "Unknown",
+      "pron": "—",
+      "wand": "Snap to centre mass",
+      "effect": "Full body-bind; immobilises.",
+      "notes": "",
+      "oc": false
+    },
+
+    /* Healing/Recovery */
+    {
+      "name": "Anapneo",
+      "difficulty": "Intermediate",
+      "creator": "Unknown",
+      "pron": "ah-NAP-nee-oh",
+      "wand": "Aim at throat",
+      "effect": "Clears a choking victim’s airway.",
+      "notes": "",
+      "oc": false
+    },
+
+    /* Detection/Counter-concealment */
+    {
+      "name": "Aparecium (anti-concealment)",
+      "difficulty": "Intermediate",
+      "creator": "Unknown",
+      "pron": "AH-par-EE-see-um",
+      "wand": "Arc over object",
+      "effect": "Reveals hidden messages/objects.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Appare Vestigium",
+      "difficulty": "Advanced",
+      "creator": "Unknown",
+      "pron": "ah-PAR-ay ves-TEE-jee-um",
+      "wand": "Sweep area",
+      "effect": "Reveals traces of magic in an area.",
+      "notes": "",
+      "oc": false
+    },
+
+    /* Offensive knowledge for defence */
+    {
+      "name": "Conjunctivitis Curse",
+      "difficulty": "Advanced",
+      "creator": "Unknown",
+      "pron": "—",
+      "wand": "Aim at eyes",
+      "effect": "Irritates eyes; can swell shut.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Combat Bolt",
+      "difficulty": "Intermediate",
+      "creator": "Unknown",
+      "pron": "—",
+      "wand": "Point and fire",
+      "effect": "Projects energy bolt.",
+      "notes": "",
+      "oc": false
+    }
+  ],
+
+  "Jinxes & Hexes (Dueling)": [
+    {
+      "name": "Unknown Dangling Jinx",
+      "difficulty": "Intermediate",
+      "creator": "Unknown",
+      "pron": "—",
+      "wand": "Upward yank",
+      "effect": "Hangs target upside-down by ankle.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Unknown Tongue-Binding Jinx",
+      "difficulty": "Advanced",
+      "creator": "Unknown",
+      "pron": "—",
+      "wand": "Clamp at mouth",
+      "effect": "Prevents speech by magical means.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Flipendo (Knockback Jinx)",
+      "difficulty": "Beginner",
+      "creator": "Unknown",
+      "pron": "—",
+      "wand": "Pushing motion",
+      "effect": "Knocks target backward.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Everte Statum",
+      "difficulty": "Intermediate",
+      "creator": "Unknown",
+      "pron": "ee-VER-tay STAH-tum",
+      "wand": "Sharp strike",
+      "effect": "Throws victim backward.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Densaugeo",
+      "difficulty": "Intermediate",
+      "creator": "Unknown",
+      "pron": "den-SAW-jee-oh",
+      "wand": "Aim at teeth",
+      "effect": "Rapidly grows teeth.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Furnunculus",
+      "difficulty": "Intermediate",
+      "creator": "Unknown",
+      "pron": "—",
+      "wand": "Point at skin",
+      "effect": "Causes boils.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Anteoculatia",
+      "difficulty": "Intermediate",
+      "creator": "Unknown",
+      "pron": "an-tee-oh-kyoo-LAY-chee-ah",
+      "wand": "Aim at head",
+      "effect": "Grows antlers on target.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Jelly-Legs Jinx",
+      "difficulty": "Beginner",
+      "creator": "Unknown",
+      "pron": "—",
+      "wand": "Flick at legs",
+      "effect": "Wobbly, unstable legs.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Tarantallegra",
+      "difficulty": "Intermediate",
+      "creator": "Unknown",
+      "pron": "—",
+      "wand": "Flick at feet",
+      "effect": "Forces uncontrollable dancing.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Rictusempra",
+      "difficulty": "Beginner",
+      "creator": "Unknown",
+      "pron": "—",
+      "wand": "Quick tickling flick",
+      "effect": "Tickling; disarms via laughter.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Calvorio",
+      "difficulty": "Intermediate",
+      "creator": "Unknown",
+      "pron": "cal-VOR-ee-oh",
+      "wand": "Aim at hair",
+      "effect": "Removes hair completely.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Colloshoo",
+      "difficulty": "Beginner",
+      "creator": "Unknown",
+      "pron": "CAWL-low-shoo",
+      "wand": "Point at shoes",
+      "effect": "Sticks shoes to the ground.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Entomorphis",
+      "difficulty": "Advanced",
+      "creator": "Unknown",
+      "pron": "en-TOE-morph-is",
+      "wand": "Sweeping morphing arc",
+      "effect": "Temporary insectoid transformation.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Broom Jinx",
+      "difficulty": "Advanced",
+      "creator": "Unknown",
+      "pron": "—",
+      "wand": "Maintain eye contact",
+      "effect": "Broom tries to throw rider; needs eye contact.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Babbling Curse",
+      "difficulty": "Intermediate",
+      "creator": "Unknown",
+      "pron": "—",
+      "wand": "Aim at head",
+      "effect": "Uncontrollable babbling.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Ear-shrivelling Curse",
+      "difficulty": "Intermediate",
+      "creator": "Unknown",
+      "pron": "—",
+      "wand": "Aim at ears",
+      "effect": "Ears shrivel.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Cornflake Skin Spell",
+      "difficulty": "Intermediate",
+      "creator": "Unknown",
+      "pron": "—",
+      "wand": "—",
+      "effect": "Skin appears coated in cornflakes.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Cascading Jinx",
+      "difficulty": "Advanced",
+      "creator": "Unknown",
+      "pron": "—",
+      "wand": "Cast into crowd",
+      "effect": "Strikes multiple targets.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Deterioration Hex",
+      "difficulty": "Advanced",
+      "creator": "Unknown",
+      "pron": "—",
+      "wand": "Sapping gesture",
+      "effect": "Weakens stamina/energy.",
+      "notes": "",
+      "oc": false
+    }
+  ],
+
+  "Dark Arts (Forbidden)": [
+    {
+      "name": "Avada Kedavra",
+      "difficulty": "Expert",
+      "creator": "Ancient dark",
+      "pron": "ah-VAH-dah keh-DAV-rah",
+      "wand": "Direct aim; murderous intent",
+      "effect": "Instant death.",
+      "notes": "Absolutely forbidden.",
+      "oc": false
+    },
+    {
+      "name": "Crucio (Cruciatus)",
+      "difficulty": "Expert",
+      "creator": "Ancient dark",
+      "pron": "KROO-see-oh",
+      "wand": "Direct; desire to harm",
+      "effect": "Excruciating torture.",
+      "notes": "Absolutely forbidden.",
+      "oc": false
+    },
+    {
+      "name": "Imperio (Imperius)",
+      "difficulty": "Expert",
+      "creator": "Ancient dark",
+      "pron": "im-PEER-ee-oh",
+      "wand": "Smooth arc toward eyes",
+      "effect": "Total mind control.",
+      "notes": "Absolutely forbidden.",
+      "oc": false
+    },
+    {
+      "name": "Unknown Slashing Curse",
+      "difficulty": "Advanced",
+      "creator": "Unknown",
+      "pron": "—",
+      "wand": "Cutting sweep",
+      "effect": "Causes deep slashing wounds.",
+      "notes": "EXTREMELY dangerous; students must never attempt.",
+      "oc": false
+    },
+    {
+      "name": "Entrail-Expelling Curse",
+      "difficulty": "Expert",
+      "creator": "Urquhart Rackharrow",
+      "pron": "—",
+      "wand": "Strike at abdomen",
+      "effect": "Expels entrails.",
+      "notes": "Extremely dark.",
+      "oc": false
+    },
+    {
+      "name": "Confringo",
+      "difficulty": "Advanced",
+      "creator": "Unknown",
+      "pron": "kon-FRING-goh",
+      "wand": "Snap to target; flare",
+      "effect": "Fiery blasting curse.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Expulso",
+      "difficulty": "Advanced",
+      "creator": "Unknown",
+      "pron": "ecks-PUHL-soh",
+      "wand": "Punching motion",
+      "effect": "Pressure-based explosion.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Defodio",
+      "difficulty": "Advanced",
+      "creator": "Unknown",
+      "pron": "deh-FOH-dee-oh",
+      "wand": "Drilling spiral",
+      "effect": "Gouges stone/earth.",
+      "notes": "",
+      "oc": false
+    }
+  ],
+
+  "Herbology": [
+    {
+      "name": "Herbivicus",
+      "difficulty": "Intermediate",
+      "creator": "Unknown",
+      "pron": "—",
+      "wand": "Gentle spiral over plants",
+      "effect": "Accelerates plant growth.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Celescere",
+      "difficulty": "Advanced",
+      "creator": "Unknown",
+      "pron": "—",
+      "wand": "Broad sweeps across greenhouse",
+      "effect": "Accelerates greenhouse growth.",
+      "notes": "",
+      "oc": false
+    }
+  ],
+
+  "Divination": [
+    {
+      "name": "Crystal Ball Gazing (Scrying)",
+      "difficulty": "Beginner",
+      "creator": "Ancient practice",
+      "pron": "—",
+      "wand": "Gaze in meditative state",
+      "effect": "Visions of future/distant events.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Tea Leaf Reading (Tasseomancy)",
+      "difficulty": "Beginner",
+      "creator": "Ancient practice",
+      "pron": "—",
+      "wand": "Read cup after drinking",
+      "effect": "Interprets future from tea-leaf patterns.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Palmistry",
+      "difficulty": "Beginner",
+      "creator": "Ancient practice",
+      "pron": "—",
+      "wand": "Examine palm lines",
+      "effect": "Reads character/future from hand.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Astrology",
+      "difficulty": "Intermediate",
+      "creator": "Ancient practice",
+      "pron": "—",
+      "wand": "Chart stars/planets",
+      "effect": "Divines from celestial patterns.",
+      "notes": "",
+      "oc": false
+    }
+  ],
+
+  "Arithmancy": [
+    {
+      "name": "Numerological Prediction Spells",
+      "difficulty": "Advanced",
+      "creator": "Unknown",
+      "pron": "—",
+      "wand": "Compute + cast",
+      "effect": "Divination by magical numbers.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Mathematical Enhancement Charms",
+      "difficulty": "Intermediate",
+      "creator": "Unknown",
+      "pron": "—",
+      "wand": "Cast on work/tools",
+      "effect": "Aids complex calculations.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Probability Manipulation",
+      "difficulty": "Advanced",
+      "creator": "Unknown",
+      "pron": "—",
+      "wand": "Complex numerical spellwork",
+      "effect": "Influences likelihood of events.",
+      "notes": "",
+      "oc": false
+    }
+  ],
+
+  "Ancient Runes": [
+    {
+      "name": "Rune-based Spells",
+      "difficulty": "Advanced",
+      "creator": "Ancient civilisations",
+      "pron": "—",
+      "wand": "Carve/write runes; channel",
+      "effect": "Permanent enchantments via runes.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Protective Rune Sequences",
+      "difficulty": "Advanced",
+      "creator": "Ancient civilisations",
+      "pron": "—",
+      "wand": "Arrange specific patterns",
+      "effect": "Defensive wards using runes.",
+      "notes": "",
+      "oc": false
+    }
+  ],
+
+  "Ancient Magic & Specialised Arts": [
+    /* Ancient magic / interactions */
+    {
+      "name": "Ancient Magic Finishers",
+      "difficulty": "Expert",
+      "creator": "Ancient",
+      "pron": "—",
+      "wand": "Channel repository power",
+      "effect": "Extremely powerful combat strikes.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Repository Magic",
+      "difficulty": "Expert",
+      "creator": "Ancient",
+      "pron": "—",
+      "wand": "Interact with repositories",
+      "effect": "Access/manipulate ancient stored magic.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Goblin Magic Interactions",
+      "difficulty": "Advanced",
+      "creator": "Various",
+      "pron": "—",
+      "wand": "Specific handling gestures",
+      "effect": "Techniques for goblin-made objects.",
+      "notes": "",
+      "oc": false
+    },
+
+    /* Transport & communication */
+    {
+      "name": "Apparition",
+      "difficulty": "Expert",
+      "creator": "Unknown",
+      "pron": "—",
+      "wand": "Turn on the spot",
+      "effect": "Teleportation; license required.",
+      "notes": "Risk of splinching.",
+      "oc": false
+    },
+    {
+      "name": "Portkey Creation (Portus)",
+      "difficulty": "Expert",
+      "creator": "Unknown",
+      "pron": "POR-tus",
+      "wand": "Tap object; binding gesture",
+      "effect": "Turns an object into a Portkey.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Floo Network Spells",
+      "difficulty": "Intermediate",
+      "creator": "Ignatia Wildsmith (13th c.)",
+      "pron": "—",
+      "wand": "Throw Floo powder; speak destination",
+      "effect": "Travel/communicate via fireplaces.",
+      "notes": "",
+      "oc": false
+    },
+
+    /* Advanced protective / vows */
+    {
+      "name": "Fidelius Charm",
+      "difficulty": "Expert",
+      "creator": "Unknown",
+      "pron": "—",
+      "wand": "Secret Keeper ritual",
+      "effect": "Hides a secret within a person.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Unbreakable Vow",
+      "difficulty": "Expert",
+      "creator": "Unknown",
+      "pron": "—",
+      "wand": "Ritual with witness",
+      "effect": "Binding oath; death if broken.",
+      "notes": "",
+      "oc": false
+    },
+
+    /* Memory / mind */
+    {
+      "name": "False Memory Charm",
+      "difficulty": "Advanced",
+      "creator": "Unknown",
+      "pron": "—",
+      "wand": "Point at head; project false scene",
+      "effect": "Implants false memories.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Obliviate (Memory Charm)",
+      "difficulty": "Advanced",
+      "creator": "Unknown",
+      "pron": "oh-BLIV-ee-ate",
+      "wand": "Point at temple; focus on memory",
+      "effect": "Erases specific memories.",
+      "notes": "",
+      "oc": false
+    },
+
+    /* Musical & artistic */
+    {
+      "name": "Cantis (Singing Charm)",
+      "difficulty": "Intermediate",
+      "creator": "Unknown",
+      "pron": "CAN-tiss",
+      "wand": "Point and cast",
+      "effect": "Forces target to sing uncontrollably.",
+      "notes": "",
+      "oc": false
+    },
+    {
+      "name": "Piertotum Locomotor",
+      "difficulty": "Advanced",
+      "creator": "Unknown",
+      "pron": "—",
+      "wand": "Aim at statues/armour",
+      "effect": "Animates statues and suits of armour.",
+      "notes": "",
+      "oc": false
+    }
+  ],
+
+"Player-Created Spells": [
+  {
+    "name": "Ink-Cloak Charm",
+    "difficulty": "Advanced",
+    "creator": "Marcella Hemingway (Created in 1889)",
+    "pron": "skrip-TEE-oh ob-SKOO-rah",
+    "wand": "Trace a rectangle over the text, then tap once to bind it to the named recipient.",
+    "effect": "Obscures written ink to everyone except the named recipient for ~24 hours. The intended reader can reveal the text by touching the page; others see only blank parchment or faint smudges.",
+    "notes": "Devised during Marcella’s investigation work. Resists simple revealing charms; the original caster’s 'Finite' cancels it immediately. Duration extends if cast using silver-infused ink.",
+    "oc": true
+  }
+]
+
