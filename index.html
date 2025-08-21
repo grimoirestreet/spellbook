@@ -161,55 +161,43 @@
  
     <p class="footer">Report missing or era-inaccurate spells to staff.</p>
   </div>
- 
 <script>
-/***********************
- * CONFIG
- ***********************/
-const DATA_URL = 'spells-data.json'; // one file in repo root
+/** CONFIG **/
+const DATA_URL = 'spells-data.json'; // root-level JSON
+const EDIT_DATA_URL = 'https://github.com/YOURUSER/YOURREPO/edit/main/spells-data.json'; // optional quick link
 
-// Try to auto-guess your GitHub repo edit link (works on GitHub Pages)
-(function setEditLink(){
-  try{
-    const m = location.hostname.match(/^(.+)\.github\.io$/);
-    const user = m && m[1];
-    const repo = (location.pathname.split('/').filter(Boolean)[0]) || '';
-    const href = (user && repo) ? `https://github.com/${user}/${repo}/edit/main/spells-data.json` : null;
-    if(href) document.getElementById('editLink').href = href;
-  }catch{}
-})();
-
-/***********************
- * SUBJECTS (tabs)
- ***********************/
-let SUBJECTS = [
-  'Charms','Transfiguration','Defence Against the Dark Arts',
-  'Jinxes & Hexes (Dueling)','Dark Arts (Forbidden)',
-  'Herbology','Divination','Arithmancy','Ancient Runes',
-  'Ancient Magic & Specialised Arts','Player-Created Spells'
-];
-
-/***********************
- * APP STATE & HELPERS
- ***********************/
-const $ = s=>document.querySelector(s);
+/** DOM helpers **/
+const $ = s => document.querySelector(s);
 const sideTabs = document.querySelector('.tabs');
 const listEl = $('#list');
 const subjectTitle = $('#subjectTitle');
 const sideEl = document.querySelector('.side');
 
-const state = { q:'', dif:'', year:'', subject:'', oc:false };
-const EXTRA = {}; // { subject:[{...}], ... } from spells-data.json
-
+/** Sticky aside only when it fits **/
 function updateSticky(){
   const fits = window.innerWidth >= 981 && (sideEl.scrollHeight + 24) <= window.innerHeight;
   sideEl.classList.toggle('is-sticky', fits);
 }
 
-/* Year filter */
+/** State + data **/
+let SUBJECTS = [];
+let SPELLS = []; // flat: {subject, name, difficulty, creator, pron, wand, effect, notes, oc?}
+const state = { q:'', dif:'', year:'', subject:'', oc:false };
+
+function buildTabs(){
+  sideTabs.innerHTML = '';
+  SUBJECTS.forEach(s=>{
+    const b = document.createElement('button');
+    b.textContent = s;
+    b.setAttribute('aria-current', String(state.subject===s));
+    b.addEventListener('click', ()=>{ state.subject=s; render(); });
+    sideTabs.appendChild(b);
+  });
+}
+
 function allowedByYear(dif){
   if(!state.year) return true;
-  const lvl = dif||'';
+  const lvl = dif || '';
   switch(state.year){
     case 'y12': return lvl==='Beginner';
     case 'y34': return ['Beginner','Intermediate'].includes(lvl);
@@ -219,97 +207,40 @@ function allowedByYear(dif){
   }
 }
 
-/* Robust normalizer: accepts
-   A) [ {subject,name,...}, ... ]
-   B) { subjects:[...], spells:[...] }  (subject on each spell)
-   C) { "Charms":[{...}], "Transfiguration":[...], ... }  grouped by subject
-*/
-function normalizeSpellSource(data, defaultSubject=''){
-  const out = [];
-  const push = (sp, subj) => out.push({
-    subject: subj || sp.subject || 'Charms',
-    name: sp.name || 'Untitled Spell',
-    difficulty: sp.difficulty || '',
-    creator: sp.creator || '',
-    pron: sp.pron || sp.pronunciation || '',
-    wand: sp.wand || sp.wand_movement || '',
-    effect: sp.effect || '',
-    notes: sp.notes || '',
-    oc: !!sp.oc
-  });
-
-  if(Array.isArray(data)){
-    data.forEach(sp => push(sp, defaultSubject));
-  }else if(data && Array.isArray(data.spells)){
-    const subj = data.subject || defaultSubject;
-    data.spells.forEach(sp => push(sp, subj));
-  }else if(data && typeof data === 'object'){
-    for(const [subj, arr] of Object.entries(data)){
-      if(Array.isArray(arr)) arr.forEach(sp => push(sp, subj));
-    }
-  }
-  return out;
-}
-
-async function loadExternalSpells(){
-  try{
-    const res = await fetch(DATA_URL, { cache:'no-store' });
-    if(!res.ok) throw new Error('HTTP '+res.status);
-    const raw = await res.json();
-    const merged = normalizeSpellSource(raw);
-
-    merged.forEach(sp=>{
-      const {subject, ...rest} = sp;
-      (EXTRA[subject] ||= []).push(rest);
-      if(!SUBJECTS.includes(subject)) SUBJECTS.push(subject);
-    });
-  }catch(err){
-    console.warn('Could not load', DATA_URL, err);
-  }
-}
-
-function buildTabs(){
-  sideTabs.innerHTML='';
-  SUBJECTS.forEach(s=>{
-    const b=document.createElement('button');
-    b.textContent=s;
-    b.setAttribute('aria-current', String(state.subject===s));
-    b.addEventListener('click', ()=>{ state.subject=s; render(); });
-    sideTabs.appendChild(b);
-  });
-}
-
 function matches(sp){
   if(state.dif && sp.difficulty!==state.dif) return false;
   if(!allowedByYear(sp.difficulty)) return false;
-  if(!state.oc && sp.oc) return false; // hide OC unless Canon+OC is on
+  if(!state.oc && sp.oc) return false; // hide OC in Canon mode
   if(state.q){
-    const blob=((sp.name||'')+' '+(sp.effect||'')+' '+(sp.creator||'')+' '+(sp.pron||'')+' '+(sp.wand||'')+' '+(sp.notes||'')).toLowerCase();
+    const blob = [
+      sp.name, sp.effect, sp.creator, sp.pron, sp.wand, sp.notes, sp.subject
+    ].filter(Boolean).join(' ').toLowerCase();
     if(!blob.includes(state.q)) return false;
   }
   return true;
 }
 
 function makeRow(sp){
-  const it=document.createElement('details'); it.className='item';
-  const sum=document.createElement('summary');
+  const it = document.createElement('details'); it.className='item';
+  const sum = document.createElement('summary');
 
-  const nameWrap=document.createElement('div'); nameWrap.className='namewrap';
-  const name=document.createElement('div'); name.className='name'; name.textContent=sp.name;
-  const preview=document.createElement('div'); preview.className='effect-preview'; preview.textContent=sp.effect||'—';
+  const nameWrap = document.createElement('div'); nameWrap.className='namewrap';
+  const name = document.createElement('div'); name.className='name'; name.textContent=sp.name;
+  const preview = document.createElement('div'); preview.className='effect-preview'; preview.textContent=sp.effect||'—';
   nameWrap.append(name, preview);
 
-  const meta=document.createElement('div'); meta.className='meta';
-  const pill=document.createElement('span'); pill.className='pill'; pill.textContent=sp.difficulty||'—';
-  meta.appendChild(pill);
-  if(sp.oc){ const oc=document.createElement('span'); oc.className='pill'; oc.textContent='OC'; meta.appendChild(oc); }
-  const creator=document.createElement('span'); creator.className='pill'; creator.textContent=sp.creator||'—'; meta.appendChild(creator);
+  const meta = document.createElement('div'); meta.className='meta';
+  const pill1 = document.createElement('span'); pill1.className='pill'; pill1.textContent=sp.difficulty||'—';
+  meta.appendChild(pill1);
+  const pill2 = document.createElement('span'); pill2.className='pill'; pill2.textContent=sp.creator||'—';
+  meta.appendChild(pill2);
+  if(sp.oc){ const oc = document.createElement('span'); oc.className='pill'; oc.textContent='OC'; meta.appendChild(oc); }
 
   sum.append(nameWrap, meta);
 
-  const body=document.createElement('div'); body.className='body';
-  const specs=document.createElement('div'); specs.className='spec grid-2';
-  specs.innerHTML=`
+  const body = document.createElement('div'); body.className='body';
+  const specs = document.createElement('div'); specs.className='spec grid-2';
+  specs.innerHTML = `
     <dl>
       <dt>Pronunciation</dt><dd>${sp.pron||'—'}</dd>
       <dt>Wand movement</dt><dd>${sp.wand||'—'}</dd>
@@ -319,51 +250,78 @@ function makeRow(sp){
       <dt>Notes</dt><dd class="notes">${sp.notes||''}</dd>
     </dl>`;
   body.appendChild(specs);
+
   it.append(sum, body);
   return it;
 }
 
-function dataFor(subject){
-  return EXTRA[subject] || [];
-}
-
 function render(){
-  // tabs state + title
-  [...sideTabs.children].forEach(btn=> btn.setAttribute('aria-current', String(btn.textContent===state.subject)));
+  // highlight current tab
+  [...sideTabs.children].forEach(btn => btn.setAttribute('aria-current', String(btn.textContent===state.subject)));
   subjectTitle.textContent = state.subject || 'Spells';
 
-  // items
-  const items = (dataFor(state.subject))
-    .filter(matches)
-    .sort((a,b)=> (a.name||'').localeCompare(b.name||''));
+  const items = SPELLS.filter(s => s.subject===state.subject).filter(matches)
+    .sort((a,b)=> a.name.localeCompare(b.name));
 
-  listEl.innerHTML='';
+  listEl.innerHTML = '';
   if(!items.length){
-    const d=document.createElement('div'); d.className='empty';
-    d.innerHTML='No entries. Edit <code>spells-data.json</code> or loosen filters.';
+    const d = document.createElement('div');
+    d.className = 'empty';
+    d.innerHTML = 'No entries. Edit <code>spells-data.json</code> or loosen filters.';
     listEl.appendChild(d);
     return;
   }
-  items.forEach(sp=> listEl.appendChild(makeRow(sp)));
+  items.forEach(sp => listEl.appendChild(makeRow(sp)));
 }
 
-/* Controls */
+/** Controls **/
 $('#q').addEventListener('input', e=>{ state.q=e.target.value.trim().toLowerCase(); render(); });
 $('#dif').addEventListener('change', e=>{ state.dif=e.target.value; render(); });
 $('#year').addEventListener('change', e=>{ state.year=e.target.value; render(); });
 $('#modeCanon').addEventListener('click', ()=>{ state.oc=false; $('#modeCanon').setAttribute('aria-pressed','true'); $('#modeAll').setAttribute('aria-pressed','false'); render(); });
 $('#modeAll').addEventListener('click', ()=>{ state.oc=true;  $('#modeAll').setAttribute('aria-pressed','true');  $('#modeCanon').setAttribute('aria-pressed','false'); render(); });
 
-/* Boot */
+/** Load JSON (supports two shapes) **/
 async function boot(){
-  await loadExternalSpells();
-  // pick first subject that has entries, else default to first tab
-  const withData = SUBJECTS.find(s => (EXTRA[s]||[]).length);
-  state.subject = withData || SUBJECTS[0] || 'Charms';
-  buildTabs();
-  updateSticky();
-  window.addEventListener('resize', updateSticky);
-  render();
+  try{
+    const res = await fetch(DATA_URL, { cache:'no-store' });
+    if(!res.ok) throw new Error('HTTP '+res.status);
+    const data = await res.json();
+
+    let subjects = [];
+    let spells = [];
+
+    if (Array.isArray(data.spells)) {
+      // flat list with subject property
+      spells = data.spells.map(s => ({ oc:false, ...s }));
+      subjects = (Array.isArray(data.subjects) && data.subjects.length)
+        ? data.subjects.slice()
+        : Array.from(new Set(spells.map(s=>s.subject))).sort();
+    } else {
+      // keyed by subject: { "Charms":[...], "Transfiguration":[...], ... }
+      subjects = Object.keys(data);
+      subjects.forEach(sub => {
+        const arr = Array.isArray(data[sub]) ? data[sub] : [];
+        arr.forEach(s => spells.push({ subject: sub, oc: !!s.oc, ...s }));
+      });
+      subjects.sort();
+    }
+
+    // required globals
+    SUBJECTS = subjects;
+    SPELLS = spells;
+
+    // default subject
+    state.subject = SUBJECTS[0] || 'Charms';
+
+    buildTabs();
+    render();
+    updateSticky();
+    window.addEventListener('resize', updateSticky);
+
+  }catch(err){
+    listEl.innerHTML = `<div class="empty">Could not load <code>${DATA_URL}</code>. Ensure it exists at the repo root and the JSON is valid.<br><small>${String(err)}</small></div>`;
+  }
 }
 boot();
 </script>
