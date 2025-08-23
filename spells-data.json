@@ -3,7 +3,7 @@
     {
       "name": "Avifors Spell",
       "incantation": "Avifors",
-      "pronunciation": "AH‑vih‑fors",
+      "pronunciation": "AH-vih-fors",
       "type_of_spell": "Transfiguration",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -32,7 +32,7 @@
     {
       "name": "Beetles to Buttons",
       "incantation": "Brupestus Globuli",
-      "pronunciation": "brupestus-globuli",
+      "pronunciation": "brup-EST-us glob-UL-ih",
       "type_of_spell": "Transfiguration",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -84,7 +84,7 @@
     {
       "name": "Bleaching Charm",
       "incantation": "Pallens",
-      "pronunciation": "pallens",
+      "pronunciation": "PALL-ens",
       "type_of_spell": "Transfiguration",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -111,7 +111,7 @@
     {
       "name": "Bouquet Spell",
       "incantation": "Orchideous",
-      "pronunciation": "or‑KID‑ee‑us",
+      "pronunciation": "or-KID-ee-us",
       "type_of_spell": "Transfiguration",
       "caster_level": "Intermediate (Years 3–4)",
       "legality": "Ministry-approved",
@@ -140,7 +140,7 @@
     {
       "name": "Chaining Spell",
       "incantation": "Manicarcerous",
-      "pronunciation": "manicarcerous",
+      "pronunciation": "man-ic-arc-ER-ous",
       "type_of_spell": "Transfiguration",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -167,7 +167,7 @@
     {
       "name": "Chicken Jinx",
       "incantation": "Pullus",
-      "pronunciation": "pullus",
+      "pronunciation": "PULL-us",
       "type_of_spell": "Transfiguration",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -296,7 +296,7 @@
     {
       "name": "Extension Charm",
       "incantation": "Capacious extremis",
-      "pronunciation": "capacious-extremis",
+      "pronunciation": "ca-PAY-shus ex-TREEM-us",
       "type_of_spell": "Transfiguration",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -323,7 +323,7 @@
     {
       "name": "Fish Spell",
       "incantation": "Piscifors",
-      "pronunciation": "piscifors",
+      "pronunciation": "pisc-IF-ors",
       "type_of_spell": "Transfiguration",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -350,7 +350,7 @@
     {
       "name": "Flower Charm",
       "incantation": "Herbifors",
-      "pronunciation": "herbifors",
+      "pronunciation": "herb-IF-ors",
       "type_of_spell": "Transfiguration",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -433,7 +433,7 @@
     {
       "name": "Homorphus Charm",
       "incantation": "Homorphus",
-      "pronunciation": "homorphus",
+      "pronunciation": "hom-ORPH-us",
       "type_of_spell": "Transfiguration",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -460,7 +460,7 @@
     {
       "name": "Incarcerous Spell",
       "incantation": "Incarcerous",
-      "pronunciation": "incarcerous",
+      "pronunciation": "inc-arc-ER-ous",
       "type_of_spell": "Transfiguration",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -487,7 +487,7 @@
     {
       "name": "Insect Hex",
       "incantation": "Entomorphis",
-      "pronunciation": "entomorphis",
+      "pronunciation": "ent-om-ORPH-is",
       "type_of_spell": "Transfiguration",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -539,7 +539,7 @@
     {
       "name": "Matchbox Charm",
       "incantation": "Flintifors",
-      "pronunciation": "flintifors",
+      "pronunciation": "flint-IF-ors",
       "type_of_spell": "Transfiguration",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -566,7 +566,7 @@
     {
       "name": "Mirror Conjuration Charm",
       "incantation": "Reflexi",
-      "pronunciation": "reflexi",
+      "pronunciation": "refl-EX-ih",
       "type_of_spell": "Transfiguration",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -593,7 +593,7 @@
     {
       "name": "Multicorfors Spell",
       "incantation": "Multicorfors",
-      "pronunciation": "multicorfors",
+      "pronunciation": "mult-ic-ORF-ors",
       "type_of_spell": "Transfiguration",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -620,7 +620,7 @@
     {
       "name": "Pumpkin-Head Jinx",
       "incantation": "Melofors",
-      "pronunciation": "melofors",
+      "pronunciation": "mel-OF-ors",
       "type_of_spell": "Transfiguration",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -647,7 +647,7 @@
     {
       "name": "Sealed Mouth Hex",
       "incantation": "Astomos",
-      "pronunciation": "astomos",
+      "pronunciation": "ast-OM-os",
       "type_of_spell": "Transfiguration",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -699,7 +699,7 @@
     {
       "name": "Simple Copy Spell",
       "incantation": "Transferre",
-      "pronunciation": "transferre",
+      "pronunciation": "transf-ERR-eh",
       "type_of_spell": "Transfiguration",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -726,7 +726,7 @@
     {
       "name": "Skull Mutation Spell",
       "incantation": "Mutatio Skullus",
-      "pronunciation": "mutatio-skullus",
+      "pronunciation": "mut-AT-ioh SKULL-us",
       "type_of_spell": "Transfiguration",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Illegal",
@@ -753,7 +753,7 @@
     {
       "name": "Snake Summoning Spell",
       "incantation": "Serpensortia",
-      "pronunciation": "serpensortia",
+      "pronunciation": "serp-ens-ORT-iah",
       "type_of_spell": "Transfiguration",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -855,7 +855,7 @@
     {
       "name": "Tentacle Spell",
       "incantation": "Tentaclifors",
-      "pronunciation": "tentaclifors",
+      "pronunciation": "tent-acl-IF-ors",
       "type_of_spell": "Transfiguration",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -882,7 +882,7 @@
     {
       "name": "Untransfiguration Spell",
       "incantation": "Reparifarge",
-      "pronunciation": "reparifarge",
+      "pronunciation": "rep-ar-if-ARG-eh",
       "type_of_spell": "Transfiguration",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -936,7 +936,7 @@
     {
       "name": "Activation Charm",
       "incantation": "Incanto Activus",
-      "pronunciation": "incanto-activus",
+      "pronunciation": "inc-ANT-oh act-IV-us",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -964,7 +964,7 @@
     {
       "name": "Age Line Spell",
       "incantation": "Linea Aetatis",
-      "pronunciation": "linea-aetatis",
+      "pronunciation": "LIN-eah aet-AT-is",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -992,7 +992,7 @@
     {
       "name": "Aguamenti Charm",
       "incantation": "Aguamenti",
-      "pronunciation": "aguamenti",
+      "pronunciation": "ag-uam-ENT-ih",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -1020,7 +1020,7 @@
     {
       "name": "All-Stunner",
       "incantation": "Stupefex Omnis",
-      "pronunciation": "stupefex-omnis",
+      "pronunciation": "stup-EF-ex OMN-is",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -1048,7 +1048,7 @@
     {
       "name": "Animagus Spell",
       "incantation": "Amato Animo Animato Animagus",
-      "pronunciation": "amato-animo-animato-animagus",
+      "pronunciation": "am-AT-oh an-IM-oh an-im-AT-oh an-im-AG-us",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -1076,7 +1076,7 @@
     {
       "name": "Ankle Grabber Hex",
       "incantation": "Pertraho talus",
-      "pronunciation": "pertraho-talus",
+      "pronunciation": "pertr-AH-oh TAL-us",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -1104,7 +1104,7 @@
     {
       "name": "Anti-Cheating Spell",
       "incantation": "Unknown",
-      "pronunciation": "Unknown",
+      "pronunciation": "UNKN-own",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Intermediate (Years 3–4)",
       "legality": "Ministry-approved",
@@ -1129,7 +1129,7 @@
     {
       "name": "Antler Charm",
       "incantation": "Anteoculatia",
-      "pronunciation": "anteoculatia",
+      "pronunciation": "ant-eoc-ul-AT-iah",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -1157,7 +1157,7 @@
     {
       "name": "Antonin Dolohov’s Curse",
       "incantation": "Inflictum Mactabilis",
-      "pronunciation": "inflictum-mactabilis",
+      "pronunciation": "infl-ICT-um mact-ab-IL-is",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Illegal",
@@ -1185,7 +1185,7 @@
     {
       "name": "Apparition",
       "incantation": "Unknown",
-      "pronunciation": "Unknown",
+      "pronunciation": "UNKN-own",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Restricted",
@@ -1213,7 +1213,7 @@
     {
       "name": "Ascending Charm",
       "incantation": "Ascendio",
-      "pronunciation": "ascendio",
+      "pronunciation": "asc-END-ioh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -1270,7 +1270,7 @@
     {
       "name": "Barrier Line",
       "incantation": "Unknown",
-      "pronunciation": "Unknown",
+      "pronunciation": "UNKN-own",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -1298,7 +1298,7 @@
     {
       "name": "Barrier Spell",
       "incantation": "Obex",
-      "pronunciation": "obex",
+      "pronunciation": "OB-ex",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -1326,7 +1326,7 @@
     {
       "name": "Bat-Bogey Hex",
       "incantation": "Sternumentum Malefico",
-      "pronunciation": "sternumentum-malefico",
+      "pronunciation": "stern-um-ENT-um mal-ef-IC-oh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -1354,7 +1354,7 @@
     {
       "name": "Battuo inflammata",
       "incantation": "Battuo inflammata",
-      "pronunciation": "battuo-inflammata",
+      "pronunciation": "BATT-uoh infl-amm-AT-ah",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -1382,7 +1382,7 @@
     {
       "name": "Bird-Conjuring Charm",
       "incantation": "Avis",
-      "pronunciation": "avis",
+      "pronunciation": "AV-is",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -1410,7 +1410,7 @@
     {
       "name": "Bleeding Hex",
       "incantation": "Capusangre",
-      "pronunciation": "capusangre",
+      "pronunciation": "cap-us-ANGR-eh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -1438,7 +1438,7 @@
     {
       "name": "Blindfold Jinx",
       "incantation": "Obscuro",
-      "pronunciation": "obscuro",
+      "pronunciation": "obsc-UR-oh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -1466,7 +1466,7 @@
     {
       "name": "Blinding Curse",
       "incantation": "Caecus",
-      "pronunciation": "caecus",
+      "pronunciation": "CAEC-us",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -1494,7 +1494,7 @@
     {
       "name": "Blood Flow Charm",
       "incantation": "Staima",
-      "pronunciation": "staima",
+      "pronunciation": "STAIM-ah",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -1522,7 +1522,7 @@
     {
       "name": "Bluebell Flame Charm",
       "incantation": "Incendium Careulagilis",
-      "pronunciation": "incendium-careulagilis",
+      "pronunciation": "inc-END-ium car-eul-ag-IL-is",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -1550,7 +1550,7 @@
     {
       "name": "Body-Bind Curse",
       "incantation": "Petrificus Totalus",
-      "pronunciation": "petrificus-totalus",
+      "pronunciation": "petr-if-IC-us tot-AL-us",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -1578,7 +1578,7 @@
     {
       "name": "Boiling Charm",
       "incantation": "Fervefacio",
-      "pronunciation": "fervefacio",
+      "pronunciation": "ferv-ef-AC-ioh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -1606,7 +1606,7 @@
     {
       "name": "Bone Breaker",
       "incantation": "Ossa Ruptor",
-      "pronunciation": "ossa-ruptor",
+      "pronunciation": "OSS-ah RUPT-or",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -1634,7 +1634,7 @@
     {
       "name": "Broken Bone Charm",
       "incantation": "Episkokaley",
-      "pronunciation": "episkokaley",
+      "pronunciation": "ep-isk-ok-AL-ey",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -1662,7 +1662,7 @@
     {
       "name": "Bruise Relief Charm",
       "incantation": "Frendo Subvenio",
-      "pronunciation": "frendo-subvenio",
+      "pronunciation": "FREND-oh subv-EN-ioh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -1690,7 +1690,7 @@
     {
       "name": "Bubble Jinx",
       "incantation": "Ebublio",
-      "pronunciation": "ebublio",
+      "pronunciation": "eb-UBL-ioh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -1718,7 +1718,7 @@
     {
       "name": "Bubble-Head Charm",
       "incantation": "Unknown",
-      "pronunciation": "Unknown",
+      "pronunciation": "UNKN-own",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -1746,7 +1746,7 @@
     {
       "name": "Burn Hex",
       "incantation": "Ustulo",
-      "pronunciation": "ustulo",
+      "pronunciation": "ust-UL-oh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -1774,7 +1774,7 @@
     {
       "name": "Caterwauling Charm",
       "incantation": "Armoplore",
-      "pronunciation": "armoplore",
+      "pronunciation": "arm-opl-OR-eh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -1827,7 +1827,7 @@
     {
       "name": "Clear Airway Charm",
       "incantation": "Anapneo",
-      "pronunciation": "anapneo",
+      "pronunciation": "an-APN-eoh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -1855,7 +1855,7 @@
     {
       "name": "Cloak Burning Spell",
       "incantation": "Lacarnum Inflamari",
-      "pronunciation": "lacarnum-inflamari",
+      "pronunciation": "lac-ARN-um infl-am-AR-ih",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -1883,7 +1883,7 @@
     {
       "name": "Confundus Charm",
       "incantation": "Confundo",
-      "pronunciation": "confundo",
+      "pronunciation": "conf-UND-oh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -1911,7 +1911,7 @@
     {
       "name": "Conjunctivitus Curse",
       "incantation": "Unknown",
-      "pronunciation": "Unknown",
+      "pronunciation": "UNKN-own",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -1939,7 +1939,7 @@
     {
       "name": "Constricting Hex",
       "incantation": "Angustio",
-      "pronunciation": "angustio",
+      "pronunciation": "ang-UST-ioh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -1967,7 +1967,7 @@
     {
       "name": "Constriction Curse",
       "incantation": "Angustium Fatalis",
-      "pronunciation": "angustium-fatalis",
+      "pronunciation": "ang-UST-ium fat-AL-is",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Illegal",
@@ -1995,7 +1995,7 @@
     {
       "name": "Containing Shield",
       "incantation": "Protego Contineo",
-      "pronunciation": "protego-contineo",
+      "pronunciation": "prot-EG-oh cont-IN-eoh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -2023,7 +2023,7 @@
     {
       "name": "Cushioning Charm",
       "incantation": "Pulvinufi",
-      "pronunciation": "pulvinufi",
+      "pronunciation": "pulv-in-UF-ih",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -2051,7 +2051,7 @@
     {
       "name": "Cyclone charm",
       "incantation": "Vertex ventus",
-      "pronunciation": "vertex-ventus",
+      "pronunciation": "VERT-ex VENT-us",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -2079,7 +2079,7 @@
     {
       "name": "Dancing Feet Spell",
       "incantation": "Tarantallegra",
-      "pronunciation": "tarantallegra",
+      "pronunciation": "tar-ant-all-EGR-ah",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -2107,7 +2107,7 @@
     {
       "name": "Dangling Jinx",
       "incantation": "Levicorpus",
-      "pronunciation": "levicorpus",
+      "pronunciation": "lev-ic-ORP-us",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -2135,7 +2135,7 @@
     {
       "name": "Dark Mark",
       "incantation": "Morsmordre",
-      "pronunciation": "morsmordre",
+      "pronunciation": "morsm-ORDR-eh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Illegal",
@@ -2163,7 +2163,7 @@
     {
       "name": "Dark Mark barrier",
       "incantation": "Obexus Morsmordrem",
-      "pronunciation": "obexus-morsmordrem",
+      "pronunciation": "ob-EX-us morsm-ORDR-em",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -2191,7 +2191,7 @@
     {
       "name": "Deactivation Charm",
       "incantation": "Incanto Fini",
-      "pronunciation": "incanto-fini",
+      "pronunciation": "inc-ANT-oh FIN-ih",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -2219,7 +2219,7 @@
     {
       "name": "Dead Limb Hex",
       "incantation": "Laxus",
-      "pronunciation": "laxus",
+      "pronunciation": "LAX-us",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -2247,7 +2247,7 @@
     {
       "name": "Deafen Hex",
       "incantation": "Obsurdesco",
-      "pronunciation": "obsurdesco",
+      "pronunciation": "obs-urd-ESC-oh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -2275,7 +2275,7 @@
     {
       "name": "Deep Gash Curse",
       "incantation": "Effodio",
-      "pronunciation": "effodio",
+      "pronunciation": "eff-OD-ioh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Illegal",
@@ -2303,7 +2303,7 @@
     {
       "name": "Descending Charm",
       "incantation": "Descendo",
-      "pronunciation": "descendo",
+      "pronunciation": "desc-END-oh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -2331,7 +2331,7 @@
     {
       "name": "Disillusionment Charm",
       "incantation": "Unknown",
-      "pronunciation": "Unknown",
+      "pronunciation": "UNKN-own",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -2359,7 +2359,7 @@
     {
       "name": "Dislocation Hex",
       "incantation": "Extorqueo",
-      "pronunciation": "extorqueo",
+      "pronunciation": "ext-ORQ-ueoh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -2387,7 +2387,7 @@
     {
       "name": "Dome-Barrier Spell",
       "incantation": "Obexus Tholus",
-      "pronunciation": "obexus-tholus",
+      "pronunciation": "ob-EX-us THOL-us",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -2415,7 +2415,7 @@
     {
       "name": "Door Locking Charm",
       "incantation": "Colloportus",
-      "pronunciation": "colloportus",
+      "pronunciation": "coll-op-ORT-us",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -2443,7 +2443,7 @@
     {
       "name": "Doubling Charm/Curse",
       "incantation": "Geminio",
-      "pronunciation": "geminio",
+      "pronunciation": "gem-IN-ioh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -2471,7 +2471,7 @@
     {
       "name": "Drawing Animation Charm",
       "incantation": "Evaginato Moveo",
-      "pronunciation": "evaginato-moveo",
+      "pronunciation": "ev-ag-in-AT-oh MOV-eoh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -2499,7 +2499,7 @@
     {
       "name": "Drought Charm",
       "incantation": "Inaresiccitas",
-      "pronunciation": "inaresiccitas",
+      "pronunciation": "in-ar-es-icc-IT-as",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -2527,7 +2527,7 @@
     {
       "name": "Drying Charm",
       "incantation": "Arefax",
-      "pronunciation": "arefax",
+      "pronunciation": "ar-EF-ax",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -2555,7 +2555,7 @@
     {
       "name": "Durability Charm",
       "incantation": "Fianto Duri",
-      "pronunciation": "fianto-duri",
+      "pronunciation": "FIANT-oh DUR-ih",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -2583,7 +2583,7 @@
     {
       "name": "Echo Charm",
       "incantation": "Repercutio Vox",
-      "pronunciation": "repercutio-vox",
+      "pronunciation": "rep-erc-UT-ioh vox",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -2611,7 +2611,7 @@
     {
       "name": "Enchantment Revealing Charm",
       "incantation": "Declaro Incantatum",
-      "pronunciation": "declaro-incantatum",
+      "pronunciation": "decl-AR-oh inc-ant-AT-um",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -2639,7 +2639,7 @@
     {
       "name": "Entrail-Expelling Curse",
       "incantation": "Unknown",
-      "pronunciation": "Unknown",
+      "pronunciation": "UNKN-own",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Illegal",
@@ -2667,7 +2667,7 @@
     {
       "name": "Evidence Recovery Charm",
       "incantation": "Revoficus",
-      "pronunciation": "revoficus",
+      "pronunciation": "rev-of-IC-us",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -2695,7 +2695,7 @@
     {
       "name": "Expelling Curse",
       "incantation": "Expulso",
-      "pronunciation": "expulso",
+      "pronunciation": "exp-ULS-oh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -2723,7 +2723,7 @@
     {
       "name": "Exploding Charm",
       "incantation": "Bombarda",
-      "pronunciation": "bombarda",
+      "pronunciation": "bomb-ARD-ah",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -2751,7 +2751,7 @@
     {
       "name": "Eyeball Hex",
       "incantation": "Convacies",
-      "pronunciation": "convacies",
+      "pronunciation": "conv-AC-ies",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -2779,7 +2779,7 @@
     {
       "name": "False Memory Charm",
       "incantation": "Fallax Memoria",
-      "pronunciation": "fallax-memoria",
+      "pronunciation": "FALL-ax mem-OR-iah",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -2807,7 +2807,7 @@
     {
       "name": "Featherweight Charm",
       "incantation": "Relevo",
-      "pronunciation": "relevo",
+      "pronunciation": "rel-EV-oh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -2835,7 +2835,7 @@
     {
       "name": "Fidelius Charm",
       "incantation": "Unknown",
-      "pronunciation": "Unknown",
+      "pronunciation": "UNKN-own",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -2863,7 +2863,7 @@
     {
       "name": "Fiendfyre Curse",
       "incantation": "Deflagratio Infernum",
-      "pronunciation": "deflagratio-infernum",
+      "pronunciation": "defl-agr-AT-ioh inf-ERN-um",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Illegal",
@@ -2891,7 +2891,7 @@
     {
       "name": "Finger Jinx",
       "incantation": "Digilock",
-      "pronunciation": "digilock",
+      "pronunciation": "dig-IL-ock",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -2919,7 +2919,7 @@
     {
       "name": "Fire Curse",
       "incantation": "Concremo",
-      "pronunciation": "concremo",
+      "pronunciation": "concr-EM-oh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Illegal",
@@ -2947,7 +2947,7 @@
     {
       "name": "Fire Line Charm",
       "incantation": "Flagrate",
-      "pronunciation": "flagrate",
+      "pronunciation": "flagr-AT-eh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -2975,7 +2975,7 @@
     {
       "name": "Fire Whip Spell",
       "incantation": "Manardorum",
-      "pronunciation": "manardorum",
+      "pronunciation": "man-ard-OR-um",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -3003,7 +3003,7 @@
     {
       "name": "Fire-Making Spell",
       "incantation": "Incendio",
-      "pronunciation": "incendio",
+      "pronunciation": "inc-END-ioh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -3031,7 +3031,7 @@
     {
       "name": "Fire-Whip Hex",
       "incantation": "Mulciberus",
-      "pronunciation": "mulciberus",
+      "pronunciation": "mulc-ib-ER-us",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -3088,7 +3088,7 @@
     {
       "name": "Flagrante",
       "incantation": "Flagrante",
-      "pronunciation": "flagrante",
+      "pronunciation": "flagr-ANT-eh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -3116,7 +3116,7 @@
     {
       "name": "Flame-Freezing Charm",
       "incantation": "Unknown",
-      "pronunciation": "Unknown",
+      "pronunciation": "UNKN-own",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -3144,7 +3144,7 @@
     {
       "name": "Flesh binding spell",
       "incantation": "Consuo",
-      "pronunciation": "consuo",
+      "pronunciation": "CONS-uoh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -3172,7 +3172,7 @@
     {
       "name": "Flying Charm",
       "incantation": "Unknown",
-      "pronunciation": "Unknown",
+      "pronunciation": "UNKN-own",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -3200,7 +3200,7 @@
     {
       "name": "Fogging Spell",
       "incantation": "Nebulus",
-      "pronunciation": "nebulus",
+      "pronunciation": "neb-UL-us",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -3228,7 +3228,7 @@
     {
       "name": "Four-Point Spell",
       "incantation": "Point Me",
-      "pronunciation": "point-me",
+      "pronunciation": "point meh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -3256,7 +3256,7 @@
     {
       "name": "Fragmentation Curse",
       "incantation": "Diffrus Perfigum",
-      "pronunciation": "diffrus-perfigum",
+      "pronunciation": "DIFFR-us perf-IG-um",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Illegal",
@@ -3284,7 +3284,7 @@
     {
       "name": "Freeze Spell",
       "incantation": "Glacius Duo",
-      "pronunciation": "glacius-duo",
+      "pronunciation": "GLAC-ius duoh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -3337,7 +3337,7 @@
     {
       "name": "Freezing Spell",
       "incantation": "Glacius",
-      "pronunciation": "glacius",
+      "pronunciation": "GLAC-ius",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -3365,7 +3365,7 @@
     {
       "name": "Frozen Life Charm",
       "incantation": "Sopor Excessum Lethargus Quies",
-      "pronunciation": "sopor-excessum-lethargus-quies",
+      "pronunciation": "SOP-or exc-ESS-um leth-ARG-us quies",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -3393,7 +3393,7 @@
     {
       "name": "Furnunculus Curse",
       "incantation": "Furnunculus",
-      "pronunciation": "furnunculus",
+      "pronunciation": "furn-unc-UL-us",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -3421,7 +3421,7 @@
     {
       "name": "Gardening Charm",
       "incantation": "Herbivicus",
-      "pronunciation": "herbivicus",
+      "pronunciation": "herb-iv-IC-us",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -3449,7 +3449,7 @@
     {
       "name": "General Counter-Spell",
       "incantation": "Finite Incantatem",
-      "pronunciation": "finite-incantatem",
+      "pronunciation": "fin-IT-eh inc-ant-AT-em",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -3477,7 +3477,7 @@
     {
       "name": "Gouging Spell",
       "incantation": "Defodio",
-      "pronunciation": "defodio",
+      "pronunciation": "def-OD-ioh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -3505,7 +3505,7 @@
     {
       "name": "Great Exploding Charm",
       "incantation": "Bombarda Maxima",
-      "pronunciation": "bombarda-maxima",
+      "pronunciation": "bomb-ARD-ah max-IM-ah",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -3533,7 +3533,7 @@
     {
       "name": "Great Fire Making Charm",
       "incantation": "Incendio Duo",
-      "pronunciation": "incendio-duo",
+      "pronunciation": "inc-END-ioh duoh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -3561,7 +3561,7 @@
     {
       "name": "Great Freezing Spell",
       "incantation": "Glacius Tria",
-      "pronunciation": "glacius-tria",
+      "pronunciation": "GLAC-ius triah",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -3589,7 +3589,7 @@
     {
       "name": "Great Hard Shield",
       "incantation": "Protego Maxima",
-      "pronunciation": "protego-maxima",
+      "pronunciation": "prot-EG-oh max-IM-ah",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -3617,7 +3617,7 @@
     {
       "name": "Great Wand-Lighting Charm",
       "incantation": "Lumos Duo",
-      "pronunciation": "lumos-duo",
+      "pronunciation": "LUM-os duoh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -3645,7 +3645,7 @@
     {
       "name": "Greater Fire Making Charm",
       "incantation": "Incendio Maxima",
-      "pronunciation": "incendio-maxima",
+      "pronunciation": "inc-END-ioh max-IM-ah",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -3673,7 +3673,7 @@
     {
       "name": "Greater Wind Charm",
       "incantation": "Ventus Duo",
-      "pronunciation": "ventus-duo",
+      "pronunciation": "VENT-us duoh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -3701,7 +3701,7 @@
     {
       "name": "Gust Charm",
       "incantation": "Ventus",
-      "pronunciation": "ventus",
+      "pronunciation": "VENT-us",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -3729,7 +3729,7 @@
     {
       "name": "Hair Loss Curse",
       "incantation": "Calvorio",
-      "pronunciation": "calvorio",
+      "pronunciation": "calv-OR-ioh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -3757,7 +3757,7 @@
     {
       "name": "Hard Shield",
       "incantation": "Protego Durus",
-      "pronunciation": "protego-durus",
+      "pronunciation": "prot-EG-oh DUR-us",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -3785,7 +3785,7 @@
     {
       "name": "Hardened Shield",
       "incantation": "Protego Duo",
-      "pronunciation": "protego-duo",
+      "pronunciation": "prot-EG-oh duoh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -3813,7 +3813,7 @@
     {
       "name": "Heart Stopping Curse",
       "incantation": "Densissima Cor",
-      "pronunciation": "densissima-cor",
+      "pronunciation": "dens-iss-IM-ah cor",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Illegal",
@@ -3841,7 +3841,7 @@
     {
       "name": "Heating Charm",
       "incantation": "Siccari",
-      "pronunciation": "siccari",
+      "pronunciation": "sicc-AR-ih",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -3869,7 +3869,7 @@
     {
       "name": "Hex Deflection Enchantment",
       "incantation": "Salvio Hexia",
-      "pronunciation": "salvio-hexia",
+      "pronunciation": "SALV-ioh HEX-iah",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -3897,7 +3897,7 @@
     {
       "name": "Hiccup Hex",
       "incantation": "Singulto",
-      "pronunciation": "singulto",
+      "pronunciation": "sing-ULT-oh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -3925,7 +3925,7 @@
     {
       "name": "Hole Blasting Curse",
       "incantation": "Deprimo",
-      "pronunciation": "deprimo",
+      "pronunciation": "depr-IM-oh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -3953,7 +3953,7 @@
     {
       "name": "Hot Air Charm",
       "incantation": "Calefax",
-      "pronunciation": "calefax",
+      "pronunciation": "cal-EF-ax",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -3981,7 +3981,7 @@
     {
       "name": "Hot-Foot Hex",
       "incantation": "Praeuropedes",
-      "pronunciation": "praeuropedes",
+      "pronunciation": "praeur-op-ED-es",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -4009,7 +4009,7 @@
     {
       "name": "Human Recognition Enchantment",
       "incantation": "Homo Recogno",
-      "pronunciation": "homo-recogno",
+      "pronunciation": "HOM-oh rec-OGN-oh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -4037,7 +4037,7 @@
     {
       "name": "Human-presence-revealing Spell",
       "incantation": "Homenum Revelio",
-      "pronunciation": "homenum-revelio",
+      "pronunciation": "hom-EN-um rev-EL-ioh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -4065,7 +4065,7 @@
     {
       "name": "Hurling Hex",
       "incantation": "Unknown",
-      "pronunciation": "Unknown",
+      "pronunciation": "UNKN-own",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -4093,7 +4093,7 @@
     {
       "name": "Illegible Charm",
       "incantation": "Illegibilus",
-      "pronunciation": "illegibilus",
+      "pronunciation": "ill-eg-ib-IL-us",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -4121,7 +4121,7 @@
     {
       "name": "Immobilizing Charm",
       "incantation": "Consisto Cilicis",
-      "pronunciation": "consisto-cilicis",
+      "pronunciation": "cons-IST-oh cil-IC-is",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -4149,7 +4149,7 @@
     {
       "name": "Impervius Charm",
       "incantation": "Impervius",
-      "pronunciation": "impervius",
+      "pronunciation": "imp-ERV-ius",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -4177,7 +4177,7 @@
     {
       "name": "Incantation of Brief Pain Relief",
       "incantation": "Lenio Dolor Doleo Subvenio",
-      "pronunciation": "lenio-dolor-doleo-subvenio",
+      "pronunciation": "LEN-ioh DOL-or DOL-eoh subv-EN-ioh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -4205,7 +4205,7 @@
     {
       "name": "Induce Diarrhoea Spell",
       "incantation": "Defluxio Adduco",
-      "pronunciation": "defluxio-adduco",
+      "pronunciation": "defl-UX-ioh add-UC-oh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -4233,7 +4233,7 @@
     {
       "name": "Induce Vomiting Charm",
       "incantation": "Vomito Adduco",
-      "pronunciation": "vomito-adduco",
+      "pronunciation": "vom-IT-oh add-UC-oh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -4261,7 +4261,7 @@
     {
       "name": "Inflating Charm",
       "incantation": "Inflatus",
-      "pronunciation": "inflatus",
+      "pronunciation": "infl-AT-us",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -4289,7 +4289,7 @@
     {
       "name": "Insect Protection Charm",
       "incantation": "Protego Bestiola",
-      "pronunciation": "protego-bestiola",
+      "pronunciation": "prot-EG-oh best-IOL-ah",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -4317,7 +4317,7 @@
     {
       "name": "Intruder Charm",
       "incantation": "Unknown",
-      "pronunciation": "Unknown",
+      "pronunciation": "UNKN-own",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -4345,7 +4345,7 @@
     {
       "name": "Jabbing Jinx",
       "incantation": "Fodio",
-      "pronunciation": "fodio",
+      "pronunciation": "FOD-ioh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -4373,7 +4373,7 @@
     {
       "name": "Jelly-Brain Jinx",
       "incantation": "Unknown",
-      "pronunciation": "Unknown",
+      "pronunciation": "UNKN-own",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -4401,7 +4401,7 @@
     {
       "name": "Jelly-Fingers Curse",
       "incantation": "Vibrodigi",
-      "pronunciation": "vibrodigi",
+      "pronunciation": "vibr-od-IG-ih",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -4429,7 +4429,7 @@
     {
       "name": "Jelly-Legs Curse",
       "incantation": "Locomotor Wibbly",
-      "pronunciation": "locomotor-wibbly",
+      "pronunciation": "loc-om-OT-or WIBBL-y",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -4457,7 +4457,7 @@
     {
       "name": "Jelly-Legs Jinx",
       "incantation": "Vibrosura",
-      "pronunciation": "vibrosura",
+      "pronunciation": "vibr-os-UR-ah",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -4485,7 +4485,7 @@
     {
       "name": "Knee-Reversal Hex",
       "incantation": "Retrorgenus",
-      "pronunciation": "retrorgenus",
+      "pronunciation": "retr-org-EN-us",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -4513,7 +4513,7 @@
     {
       "name": "Knockback Duo Jinx",
       "incantation": "Flipendo Duo",
-      "pronunciation": "flipendo-duo",
+      "pronunciation": "flip-END-oh duoh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -4541,7 +4541,7 @@
     {
       "name": "Knockback Max Jinx",
       "incantation": "Flipendo Maxima",
-      "pronunciation": "flipendo-maxima",
+      "pronunciation": "flip-END-oh max-IM-ah",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -4569,7 +4569,7 @@
     {
       "name": "Knockback Tria Jinx",
       "incantation": "Flipendo Tria",
-      "pronunciation": "flipendo-tria",
+      "pronunciation": "flip-END-oh triah",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -4597,7 +4597,7 @@
     {
       "name": "Laceration Curse",
       "incantation": "Sectumsempra",
-      "pronunciation": "sectumsempra",
+      "pronunciation": "sect-ums-EMPR-ah",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -4625,7 +4625,7 @@
     {
       "name": "Ladder Charm",
       "incantation": "Scala",
-      "pronunciation": "scala",
+      "pronunciation": "SCAL-ah",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -4653,7 +4653,7 @@
     {
       "name": "Leg-Locker Curse",
       "incantation": "Locomotor Mortis",
-      "pronunciation": "locomotor-mortis",
+      "pronunciation": "loc-om-OT-or MORT-is",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -4681,7 +4681,7 @@
     {
       "name": "Lesser Gouging Charm",
       "incantation": "Defodio Parveo",
-      "pronunciation": "defodio-parveo",
+      "pronunciation": "def-OD-ioh PARV-eoh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -4709,7 +4709,7 @@
     {
       "name": "Levitate Body",
       "incantation": "Mobilicorpus",
-      "pronunciation": "mobilicorpus",
+      "pronunciation": "mob-il-ic-ORP-us",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -4737,7 +4737,7 @@
     {
       "name": "Levitate Object",
       "incantation": "Locomotor",
-      "pronunciation": "locomotor",
+      "pronunciation": "loc-om-OT-or",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -4765,7 +4765,7 @@
     {
       "name": "Levitate Wood",
       "incantation": "Mobiliarbus",
-      "pronunciation": "mobiliarbus",
+      "pronunciation": "mob-il-IARB-us",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -4793,7 +4793,7 @@
     {
       "name": "Levitation Charm",
       "incantation": "Wingardium Leviosa",
-      "pronunciation": "wing‑GAR‑dee‑um leh‑vee‑OH‑sa",
+      "pronunciation": "wing-GAR-dee-um leh-vee-OH-sa",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -4822,7 +4822,7 @@
     {
       "name": "Light Sphere Charm",
       "incantation": "Lumos Orbis",
-      "pronunciation": "lumos-orbis",
+      "pronunciation": "LUM-os ORB-is",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -4850,7 +4850,7 @@
     {
       "name": "Living Statue Curse",
       "incantation": "Caryatid Allakteon",
-      "pronunciation": "caryatid-allakteon",
+      "pronunciation": "car-YAT-id all-AKT-eon",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Illegal",
@@ -4878,7 +4878,7 @@
     {
       "name": "Localised Defence Charm",
       "incantation": "Cave Inimicum",
-      "pronunciation": "cave-inimicum",
+      "pronunciation": "CAV-eh in-im-IC-um",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -4906,7 +4906,7 @@
     {
       "name": "Lock Fast Charm",
       "incantation": "Obfirmo",
-      "pronunciation": "obfirmo",
+      "pronunciation": "obf-IRM-oh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -4934,7 +4934,7 @@
     {
       "name": "Locking Spell",
       "incantation": "Colloportus",
-      "pronunciation": "cull‑low‑PORE‑tus",
+      "pronunciation": "cull-low-PORE-tus",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Intermediate (Years 3–4)",
       "legality": "Ministry-approved",
@@ -4963,7 +4963,7 @@
     {
       "name": "Lumos Maxima",
       "incantation": "Lumos Maxima",
-      "pronunciation": "lumos-maxima",
+      "pronunciation": "LUM-os max-IM-ah",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -4991,7 +4991,7 @@
     {
       "name": "Magic Recognition Enchantment",
       "incantation": "Specialis Recogno",
-      "pronunciation": "specialis-recogno",
+      "pronunciation": "spec-IAL-is rec-OGN-oh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -5048,7 +5048,7 @@
     {
       "name": "Memory Copy Spell",
       "incantation": "Effingo Memoria",
-      "pronunciation": "effingo-memoria",
+      "pronunciation": "eff-ING-oh mem-OR-iah",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -5076,7 +5076,7 @@
     {
       "name": "Memory Extraction Charm",
       "incantation": "Extraxi Memoria",
-      "pronunciation": "extraxi-memoria",
+      "pronunciation": "extr-AX-ih mem-OR-iah",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -5104,7 +5104,7 @@
     {
       "name": "Mending Charm",
       "incantation": "Reparo",
-      "pronunciation": "reh‑PAH‑roh",
+      "pronunciation": "reh-PAH-roh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -5133,7 +5133,7 @@
     {
       "name": "Milling Charm",
       "incantation": "Molo capulus",
-      "pronunciation": "molo-capulus",
+      "pronunciation": "MOL-oh cap-UL-us",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -5161,7 +5161,7 @@
     {
       "name": "Mind-Reading",
       "incantation": "Legilimens",
-      "pronunciation": "legilimens",
+      "pronunciation": "leg-il-IM-ens",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -5189,7 +5189,7 @@
     {
       "name": "Minor Injury Spell",
       "incantation": "Episkey",
-      "pronunciation": "episkey",
+      "pronunciation": "ep-ISK-ey",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -5217,7 +5217,7 @@
     {
       "name": "Muggle-Repelling Charm",
       "incantation": "Repello Muggletum",
-      "pronunciation": "repello-muggletum",
+      "pronunciation": "rep-ELL-oh muggl-ET-um",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -5245,7 +5245,7 @@
     {
       "name": "Object Tracking Spell",
       "incantation": "Avenseguim",
-      "pronunciation": "avenseguim",
+      "pronunciation": "av-ens-EG-uim",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -5273,7 +5273,7 @@
     {
       "name": "Obliteration Charm",
       "incantation": "Unknown",
-      "pronunciation": "Unknown",
+      "pronunciation": "UNKN-own",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -5301,7 +5301,7 @@
     {
       "name": "Opening Charm",
       "incantation": "Aberto",
-      "pronunciation": "aberto",
+      "pronunciation": "ab-ERT-oh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -5329,7 +5329,7 @@
     {
       "name": "Organ-Stopper Curse",
       "incantation": "Desinoviscus",
-      "pronunciation": "desinoviscus",
+      "pronunciation": "des-in-ov-ISC-us",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Illegal",
@@ -5357,7 +5357,7 @@
     {
       "name": "Parchment Repair Charm",
       "incantation": "Papyrus Reparo",
-      "pronunciation": "papyrus-reparo",
+      "pronunciation": "pap-YR-us rep-AR-oh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -5385,7 +5385,7 @@
     {
       "name": "Passage Revealing Charm",
       "incantation": "Dissendium",
-      "pronunciation": "dissendium",
+      "pronunciation": "diss-END-ium",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -5413,7 +5413,7 @@
     {
       "name": "Permanent Sticking Charm",
       "incantation": "Unknown",
-      "pronunciation": "Unknown",
+      "pronunciation": "UNKN-own",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -5441,7 +5441,7 @@
     {
       "name": "Pixie Repelling Spell",
       "incantation": "Peskipiksi Pesternomi",
-      "pronunciation": "peskipiksi-pesternomi",
+      "pronunciation": "pesk-ip-IKS-ih pest-ern-OM-ih",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -5469,7 +5469,7 @@
     {
       "name": "Placement Charm",
       "incantation": "Unknown",
-      "pronunciation": "Unknown",
+      "pronunciation": "UNKN-own",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -5497,7 +5497,7 @@
     {
       "name": "Portkey Spell",
       "incantation": "Portus",
-      "pronunciation": "portus",
+      "pronunciation": "PORT-us",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -5525,7 +5525,7 @@
     {
       "name": "Presentation Charm",
       "incantation": "Exihibeo",
-      "pronunciation": "exihibeo",
+      "pronunciation": "ex-ih-IB-eoh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -5553,7 +5553,7 @@
     {
       "name": "Primo Incantatum",
       "incantation": "Unknown",
-      "pronunciation": "Unknown",
+      "pronunciation": "UNKN-own",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -5581,7 +5581,7 @@
     {
       "name": "Prohibition Jinx",
       "incantation": "Prohibeo, Ego Absit",
-      "pronunciation": "prohibeo-ego-absit",
+      "pronunciation": "proh-IB-eoh EG-oh ABS-it",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Illegal",
@@ -5609,7 +5609,7 @@
     {
       "name": "Protego Diabolica",
       "incantation": "Protego Diabolica",
-      "pronunciation": "protego-diabolica",
+      "pronunciation": "prot-EG-oh diab-ol-IC-ah",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Illegal",
@@ -5637,7 +5637,7 @@
     {
       "name": "Put Up Charm",
       "incantation": "Erecto",
-      "pronunciation": "erecto",
+      "pronunciation": "er-ECT-oh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -5665,7 +5665,7 @@
     {
       "name": "Quietening Charm",
       "incantation": "Quietus",
-      "pronunciation": "quietus",
+      "pronunciation": "QUIET-us",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -5693,7 +5693,7 @@
     {
       "name": "Quieting Charm",
       "incantation": "Tacere Mortis",
-      "pronunciation": "tacere-mortis",
+      "pronunciation": "tac-ER-eh MORT-is",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -5721,7 +5721,7 @@
     {
       "name": "Red Sparks",
       "incantation": "Vermillious",
-      "pronunciation": "vermillious",
+      "pronunciation": "verm-ILL-ious",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -5749,7 +5749,7 @@
     {
       "name": "Refraction Enchantment",
       "incantation": "Occultaquia",
-      "pronunciation": "occultaquia",
+      "pronunciation": "occ-ult-AQ-uiah",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -5806,7 +5806,7 @@
     {
       "name": "Reverse Reveal Spell",
       "incantation": "Prior Incantato",
-      "pronunciation": "prior-incantato",
+      "pronunciation": "prior inc-ant-AT-oh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -5834,7 +5834,7 @@
     {
       "name": "Reverse Spell",
       "incantation": "Prior Incanto",
-      "pronunciation": "prior-incanto",
+      "pronunciation": "prior inc-ANT-oh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -5862,7 +5862,7 @@
     {
       "name": "Revulsion Jinx",
       "incantation": "Relashio",
-      "pronunciation": "relashio",
+      "pronunciation": "rel-ASH-ioh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -5890,7 +5890,7 @@
     {
       "name": "Rotation Charm",
       "incantation": "Circumrota",
-      "pronunciation": "circumrota",
+      "pronunciation": "circ-umr-OT-ah",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -5918,7 +5918,7 @@
     {
       "name": "Scouring Charm",
       "incantation": "Scourgify",
-      "pronunciation": "SKUR‑ji‑fy",
+      "pronunciation": "SKUR-ji-fy",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Intermediate (Years 3–4)",
       "legality": "Ministry-approved",
@@ -5947,7 +5947,7 @@
     {
       "name": "Seizing Curse",
       "incantation": "Turpiscarpo",
-      "pronunciation": "turpiscarpo",
+      "pronunciation": "turp-isc-ARP-oh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Illegal",
@@ -5975,7 +5975,7 @@
     {
       "name": "Separation Charm",
       "incantation": "Separo",
-      "pronunciation": "separo",
+      "pronunciation": "sep-AR-oh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -6003,7 +6003,7 @@
     {
       "name": "Shadow Writing Charm",
       "incantation": "Portus Scribbilis",
-      "pronunciation": "portus-scribbilis",
+      "pronunciation": "PORT-us scribb-IL-is",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -6031,7 +6031,7 @@
     {
       "name": "Shaking Jinx",
       "incantation": "Quasso",
-      "pronunciation": "quasso",
+      "pronunciation": "QUASS-oh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -6059,7 +6059,7 @@
     {
       "name": "Shatter Spell",
       "incantation": "Finestra",
-      "pronunciation": "finestra",
+      "pronunciation": "fin-ESTR-ah",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -6087,7 +6087,7 @@
     {
       "name": "Singing Charm",
       "incantation": "Cantis",
-      "pronunciation": "cantis",
+      "pronunciation": "CANT-is",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -6115,7 +6115,7 @@
     {
       "name": "Skull Engorgement Curse",
       "incantation": "Engorgio Skullus",
-      "pronunciation": "engorgio-skullus",
+      "pronunciation": "eng-ORG-ioh SKULL-us",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -6143,7 +6143,7 @@
     {
       "name": "Skurge Charm",
       "incantation": "Skurge",
-      "pronunciation": "skurge",
+      "pronunciation": "SKURG-eh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -6171,7 +6171,7 @@
     {
       "name": "Sleeping Charm",
       "incantation": "Tenebris somnus",
-      "pronunciation": "tenebris-somnus",
+      "pronunciation": "ten-EBR-is SOMN-us",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -6224,7 +6224,7 @@
     {
       "name": "Slug-Vomiting Charm",
       "incantation": "Slugulus Eructo",
-      "pronunciation": "slugulus-eructo",
+      "pronunciation": "slug-UL-us er-UCT-oh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -6252,7 +6252,7 @@
     {
       "name": "Smack Hex",
       "incantation": "Infligo",
-      "pronunciation": "infligo",
+      "pronunciation": "infl-IG-oh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -6280,7 +6280,7 @@
     {
       "name": "Smiting Curse",
       "incantation": "Infligo Proterex",
-      "pronunciation": "infligo-proterex",
+      "pronunciation": "infl-IG-oh prot-ER-ex",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -6308,7 +6308,7 @@
     {
       "name": "Smoke Shaping Charm",
       "incantation": "Figuram Faci",
-      "pronunciation": "figuram-faci",
+      "pronunciation": "fig-UR-am FAC-ih",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -6336,7 +6336,7 @@
     {
       "name": "Smoke Solidifying Charm",
       "incantation": "Firmus fumus",
-      "pronunciation": "firmus-fumus",
+      "pronunciation": "FIRM-us FUM-us",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -6364,7 +6364,7 @@
     {
       "name": "Smoke-Clearing Charm",
       "incantation": "Amolior Fumus",
-      "pronunciation": "amolior-fumus",
+      "pronunciation": "am-OL-ior FUM-us",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -6392,7 +6392,7 @@
     {
       "name": "Smoke-Screen Charm",
       "incantation": "Vapos Nebulae",
-      "pronunciation": "vapos-nebulae",
+      "pronunciation": "VAP-os neb-UL-aeh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -6420,7 +6420,7 @@
     {
       "name": "Smokecloud Spell",
       "incantation": "Fumos Duo",
-      "pronunciation": "fumos-duo",
+      "pronunciation": "FUM-os duoh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -6448,7 +6448,7 @@
     {
       "name": "Smokescreen Spell",
       "incantation": "Fumos",
-      "pronunciation": "fumos",
+      "pronunciation": "FUM-os",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -6476,7 +6476,7 @@
     {
       "name": "Snare Weaving Charm",
       "incantation": "Necto Nassa",
-      "pronunciation": "necto-nassa",
+      "pronunciation": "NECT-oh NASS-ah",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -6504,7 +6504,7 @@
     {
       "name": "Sneezing Spell",
       "incantation": "Sternius",
-      "pronunciation": "sternius",
+      "pronunciation": "STERN-ius",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -6532,7 +6532,7 @@
     {
       "name": "Sound Muffling Charm",
       "incantation": "Muffliato",
-      "pronunciation": "muffliato",
+      "pronunciation": "muffl-IAT-oh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -6560,7 +6560,7 @@
     {
       "name": "Spectacle Repair Charm",
       "incantation": "Oculus Reparo",
-      "pronunciation": "oculus-reparo",
+      "pronunciation": "oc-UL-us rep-AR-oh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -6588,7 +6588,7 @@
     {
       "name": "Stair Slide Charm",
       "incantation": "Glisseo",
-      "pronunciation": "glisseo",
+      "pronunciation": "GLISS-eoh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -6616,7 +6616,7 @@
     {
       "name": "Statue Animation",
       "incantation": "Piertotum Locomotor",
-      "pronunciation": "piertotum-locomotor",
+      "pronunciation": "piert-OT-um loc-om-OT-or",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -6644,7 +6644,7 @@
     {
       "name": "Stickfast Hex",
       "incantation": "Colloshoo",
-      "pronunciation": "colloshoo",
+      "pronunciation": "coll-OSH-ooh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -6672,7 +6672,7 @@
     {
       "name": "Sticking Charm",
       "incantation": "Adhaesia",
-      "pronunciation": "adhaesia",
+      "pronunciation": "adh-AES-iah",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -6700,7 +6700,7 @@
     {
       "name": "Straight Path Charm",
       "incantation": "Averte Pedeum a Tuum A Malo",
-      "pronunciation": "averte-pedeum-a-tuum-a-malo",
+      "pronunciation": "av-ERT-eh PED-eum ah tuum ah MAL-oh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -6728,7 +6728,7 @@
     {
       "name": "Strangulation Hex",
       "incantation": "Strangulo",
-      "pronunciation": "strangulo",
+      "pronunciation": "strang-UL-oh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -6756,7 +6756,7 @@
     {
       "name": "Subjugation Hex",
       "incantation": "Devinctus",
-      "pronunciation": "devinctus",
+      "pronunciation": "dev-INCT-us",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -6784,7 +6784,7 @@
     {
       "name": "Suffoctation Charm",
       "incantation": "Pulmonary Obscura",
-      "pronunciation": "pulmonary-obscura",
+      "pronunciation": "pulm-on-AR-y obsc-UR-ah",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Illegal",
@@ -6840,7 +6840,7 @@
     {
       "name": "Summoning Charm",
       "incantation": "Accio",
-      "pronunciation": "AK‑ee‑oh",
+      "pronunciation": "AK-ee-oh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Intermediate (Years 3–4)",
       "legality": "Ministry-approved",
@@ -6869,7 +6869,7 @@
     {
       "name": "Sunlight Charm",
       "incantation": "Lumos Solem",
-      "pronunciation": "lumos-solem",
+      "pronunciation": "LUM-os SOL-em",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -6897,7 +6897,7 @@
     {
       "name": "Suppress Vomiting Charm",
       "incantation": "Vomito Confuto",
-      "pronunciation": "vomito-confuto",
+      "pronunciation": "vom-IT-oh conf-UT-oh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -6925,7 +6925,7 @@
     {
       "name": "Taboo",
       "incantation": "Unknown",
-      "pronunciation": "Unknown",
+      "pronunciation": "UNKN-own",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -6953,7 +6953,7 @@
     {
       "name": "Tangible Light Charm",
       "incantation": "Tangillumin",
-      "pronunciation": "tangillumin",
+      "pronunciation": "tang-ill-UM-in",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -6981,7 +6981,7 @@
     {
       "name": "Temporary Partition Spell",
       "incantation": "Partis Temporus",
-      "pronunciation": "partis-temporus",
+      "pronunciation": "PART-is temp-OR-us",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -7009,7 +7009,7 @@
     {
       "name": "The Brain Bleed Curse",
       "incantation": "Depleo Cerebrum",
-      "pronunciation": "depleo-cerebrum",
+      "pronunciation": "DEPL-eoh cer-EBR-um",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Illegal",
@@ -7037,7 +7037,7 @@
     {
       "name": "The Carving Charm",
       "incantation": "Persecto",
-      "pronunciation": "persecto",
+      "pronunciation": "pers-ECT-oh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -7065,7 +7065,7 @@
     {
       "name": "The Protean Charm",
       "incantation": "Proteum Magister / Proteus",
-      "pronunciation": "proteum-magister-proteus",
+      "pronunciation": "PROT-eum mag-IST-er / PROT-eus",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -7093,7 +7093,7 @@
     {
       "name": "The Smoothing Charm",
       "incantation": "Unknown",
-      "pronunciation": "Unknown",
+      "pronunciation": "UNKN-own",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -7121,7 +7121,7 @@
     {
       "name": "The flesh splitting curse",
       "incantation": "Carnem Dehisco",
-      "pronunciation": "carnem-dehisco",
+      "pronunciation": "CARN-em deh-ISC-oh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Illegal",
@@ -7149,7 +7149,7 @@
     {
       "name": "Throwback Hex",
       "incantation": "Everte Statum",
-      "pronunciation": "everte-statum",
+      "pronunciation": "ev-ERT-eh STAT-um",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -7177,7 +7177,7 @@
     {
       "name": "Tongue Tie Jinx",
       "incantation": "Langlock",
-      "pronunciation": "langlock",
+      "pronunciation": "LANGL-ock",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -7205,7 +7205,7 @@
     {
       "name": "Tongue-Tying Curse",
       "incantation": "Mimblewimble",
-      "pronunciation": "mimblewimble",
+      "pronunciation": "mimbl-ew-IMBL-eh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -7233,7 +7233,7 @@
     {
       "name": "Tooth Enlargement Hex",
       "incantation": "Densaugeo",
-      "pronunciation": "densaugeo",
+      "pronunciation": "dens-AUG-eoh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -7261,7 +7261,7 @@
     {
       "name": "Tracking Spell",
       "incantation": "Appare Vestigium",
-      "pronunciation": "appare-vestigium",
+      "pronunciation": "app-AR-eh vest-IG-ium",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -7289,7 +7289,7 @@
     {
       "name": "Trip Jinx",
       "incantation": "Accido",
-      "pronunciation": "accido",
+      "pronunciation": "acc-ID-oh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -7317,7 +7317,7 @@
     {
       "name": "Umbrella charm",
       "incantation": "Adsicco",
-      "pronunciation": "adsicco",
+      "pronunciation": "ads-ICC-oh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -7345,7 +7345,7 @@
     {
       "name": "Unbreakable Charm",
       "incantation": "Indamnum",
-      "pronunciation": "indamnum",
+      "pronunciation": "ind-AMN-um",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -7373,7 +7373,7 @@
     {
       "name": "Unbreakable Vow",
       "incantation": "Unknown",
-      "pronunciation": "Unknown",
+      "pronunciation": "UNKN-own",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -7401,7 +7401,7 @@
     {
       "name": "Unlocking Charm",
       "incantation": "Alohomora",
-      "pronunciation": "ah‑LOH‑ho‑MOR‑ah",
+      "pronunciation": "ah-LOH-ho-MOR-ah",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -7430,7 +7430,7 @@
     {
       "name": "Vaulting Charm",
       "incantation": "Alarte Ascendare",
-      "pronunciation": "alarte-ascendare",
+      "pronunciation": "al-ART-eh asc-end-AR-eh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -7458,7 +7458,7 @@
     {
       "name": "Ventus Maxima",
       "incantation": "Ventus Maxima",
-      "pronunciation": "ventus-maxima",
+      "pronunciation": "VENT-us max-IM-ah",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -7486,7 +7486,7 @@
     {
       "name": "Vermillious Duo",
       "incantation": "Vermillious Duo",
-      "pronunciation": "vermillious-duo",
+      "pronunciation": "verm-ILL-ious duoh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -7514,7 +7514,7 @@
     {
       "name": "Vermillious Tria",
       "incantation": "Vermillious Tria",
-      "pronunciation": "vermillious-tria",
+      "pronunciation": "verm-ILL-ious triah",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -7542,7 +7542,7 @@
     {
       "name": "Vertigio",
       "incantation": "Vertigio",
-      "pronunciation": "vertigio",
+      "pronunciation": "vert-IG-ioh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -7570,7 +7570,7 @@
     {
       "name": "Voice amplifying spell",
       "incantation": "Sonorus",
-      "pronunciation": "sonorus",
+      "pronunciation": "son-OR-us",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -7598,7 +7598,7 @@
     {
       "name": "Wad Launching Charm",
       "incantation": "Waddiwasi",
-      "pronunciation": "waddiwasi",
+      "pronunciation": "wadd-iw-AS-ih",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -7626,7 +7626,7 @@
     {
       "name": "Wall Building Spell",
       "incantation": "Sepulcrus Totalis",
-      "pronunciation": "sepulcrus-totalis",
+      "pronunciation": "sep-ULCR-us tot-AL-is",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -7654,7 +7654,7 @@
     {
       "name": "Wall Fortifying Charm",
       "incantation": "Munium Muri Ilii",
-      "pronunciation": "munium-muri-ilii",
+      "pronunciation": "MUN-ium MUR-ih IL-iih",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -7682,7 +7682,7 @@
     {
       "name": "Wand-Light Charm",
       "incantation": "Lumos",
-      "pronunciation": "lumos",
+      "pronunciation": "LUM-os",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -7710,7 +7710,7 @@
     {
       "name": "Wand‑Lighting Charm",
       "incantation": "Lumos",
-      "pronunciation": "LOO‑mos",
+      "pronunciation": "LOO-mos",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -7739,7 +7739,7 @@
     {
       "name": "Water‑Making Spell",
       "incantation": "Aguamenti",
-      "pronunciation": "AH‑gwah‑MEN‑tee",
+      "pronunciation": "AH-gwah-MEN-tee",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Advanced (Years 5–7)",
       "legality": "Ministry-approved",
@@ -7768,7 +7768,7 @@
     {
       "name": "Weather-Modifying Charm",
       "incantation": "Metelojinx",
-      "pronunciation": "metelojinx",
+      "pronunciation": "met-el-OJ-inx",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -7796,7 +7796,7 @@
     {
       "name": "Wide Hard Shield",
       "incantation": "Protego Horribilis",
-      "pronunciation": "protego-horribilis",
+      "pronunciation": "prot-EG-oh horr-ib-IL-is",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -7824,7 +7824,7 @@
     {
       "name": "Wide Shield",
       "incantation": "Protego Totalum",
-      "pronunciation": "protego-totalum",
+      "pronunciation": "prot-EG-oh tot-AL-um",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -7852,7 +7852,7 @@
     {
       "name": "World's Smallest Violin",
       "incantation": "Misericordeo",
-      "pronunciation": "misericordeo",
+      "pronunciation": "mis-er-ic-ORD-eoh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -7880,7 +7880,7 @@
     {
       "name": "Wrap-around spell",
       "incantation": "Obvolvo",
-      "pronunciation": "obvolvo",
+      "pronunciation": "obv-OLV-oh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -7908,7 +7908,7 @@
     {
       "name": "X-Ray Charm",
       "incantation": "Inamadverto",
-      "pronunciation": "inamadverto",
+      "pronunciation": "in-am-adv-ERT-oh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -7938,7 +7938,7 @@
     {
       "name": "Anti-Disapparition Jinx",
       "incantation": "Unknown",
-      "pronunciation": "Unknown",
+      "pronunciation": "UNKN-own",
       "type_of_spell": "Charmwork → Jinxes",
       "caster_level": "Advanced (Years 5–7)",
       "legality": "Restricted",
@@ -7963,7 +7963,7 @@
     {
       "name": "Impediment Jinx",
       "incantation": "Impedimenta",
-      "pronunciation": "im‑PED‑a‑MEN‑ta",
+      "pronunciation": "im-PED-a-MEN-ta",
       "type_of_spell": "Charmwork → Jinxes",
       "caster_level": "Intermediate (Years 3–4)",
       "legality": "Restricted",
@@ -7992,7 +7992,7 @@
     {
       "name": "Jelly‑Legs Curse",
       "incantation": "Locomotor Wibbly",
-      "pronunciation": "LOH‑koh‑moh‑tor WIB‑lee",
+      "pronunciation": "LOH-koh-moh-tor WIB-lee",
       "type_of_spell": "Charmwork → Jinxes",
       "caster_level": "Intermediate (Years 3–4)",
       "legality": "Restricted",
@@ -8021,7 +8021,7 @@
     {
       "name": "Knockback Jinx",
       "incantation": "Flipendo",
-      "pronunciation": "fli‑PEN‑doh",
+      "pronunciation": "fli-PEN-doh",
       "type_of_spell": "Charmwork → Jinxes",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -8050,7 +8050,7 @@
     {
       "name": "Silencing Charm",
       "incantation": "Silencio",
-      "pronunciation": "si‑LEN‑see‑oh",
+      "pronunciation": "si-LEN-see-oh",
       "type_of_spell": "Charmwork → Jinxes",
       "caster_level": "Advanced (Years 5–7)",
       "legality": "Restricted",
@@ -8079,7 +8079,7 @@
     {
       "name": "Tickling Charm",
       "incantation": "Rictusempra",
-      "pronunciation": "ric‑tuh‑SEM‑pra",
+      "pronunciation": "ric-tuh-SEM-pra",
       "type_of_spell": "Charmwork → Jinxes",
       "caster_level": "Intermediate (Years 3–4)",
       "legality": "Ministry-approved",
@@ -8110,7 +8110,7 @@
     {
       "name": "Leg‑Locker Curse",
       "incantation": "Locomotor Mortis",
-      "pronunciation": "LOH‑koh‑moh‑tor MOR‑tis",
+      "pronunciation": "LOH-koh-moh-tor MOR-tis",
       "type_of_spell": "Charmwork → Hexes",
       "caster_level": "Intermediate (Years 3–4)",
       "legality": "Restricted",
@@ -8168,7 +8168,7 @@
     {
       "name": "Stinging Hex",
       "incantation": "Unknown",
-      "pronunciation": "Unknown",
+      "pronunciation": "UNKN-own",
       "type_of_spell": "Charmwork → Hexes",
       "caster_level": "Intermediate (Years 3–4)",
       "legality": "Restricted",
@@ -8195,7 +8195,7 @@
     {
       "name": "Babbling Curse",
       "incantation": "Unknown",
-      "pronunciation": "Unknown",
+      "pronunciation": "UNKN-own",
       "type_of_spell": "Charmwork → Curses",
       "caster_level": "Expert (Post‑grad only)",
       "legality": "Ministry-approved",
@@ -8223,7 +8223,7 @@
     {
       "name": "Blasting Curse",
       "incantation": "Confringo",
-      "pronunciation": "con‑FRING‑go",
+      "pronunciation": "con-FRING-go",
       "type_of_spell": "Charmwork → Curses",
       "caster_level": "Advanced (Years 5–7)",
       "legality": "Illegal",
@@ -8277,7 +8277,7 @@
     {
       "name": "Full Body‑Bind Curse",
       "incantation": "Petrificus Totalus",
-      "pronunciation": "peh‑TRIF‑i‑kus to‑TAL‑us",
+      "pronunciation": "peh-TRIF-i-kus to-TAL-us",
       "type_of_spell": "Charmwork → Curses",
       "caster_level": "Intermediate (Years 3–4)",
       "legality": "Restricted",
@@ -8306,7 +8306,7 @@
     {
       "name": "Reductor Curse",
       "incantation": "Reducto",
-      "pronunciation": "re‑DUCK‑toh",
+      "pronunciation": "re-DUCK-toh",
       "type_of_spell": "Charmwork → Curses",
       "caster_level": "Advanced (Years 5–7)",
       "legality": "Restricted",
@@ -8337,7 +8337,7 @@
     {
       "name": "Boggart-Banishing Charm",
       "incantation": "Riddikulus",
-      "pronunciation": "riddikulus",
+      "pronunciation": "ridd-ik-UL-us",
       "type_of_spell": "Counter-Spell",
       "caster_level": "Intermediate (Years 3–4)",
       "legality": "Ministry-approved",
@@ -8364,7 +8364,7 @@
     {
       "name": "Clear-Mind Counter Charm",
       "incantation": "Sanus",
-      "pronunciation": "sanus",
+      "pronunciation": "SAN-us",
       "type_of_spell": "Counter-Spell",
       "caster_level": "Intermediate (Years 3–4)",
       "legality": "Ministry-approved",
@@ -8391,7 +8391,7 @@
     {
       "name": "Constriction Curse Counter",
       "incantation": "Opressus Exonero",
-      "pronunciation": "opressus-exonero",
+      "pronunciation": "opr-ESS-us ex-on-ER-oh",
       "type_of_spell": "Counter-Spell",
       "caster_level": "Intermediate (Years 3–4)",
       "legality": "Ministry-approved",
@@ -8418,7 +8418,7 @@
     {
       "name": "Ear Curse Counter",
       "incantation": "Purgo Auris",
-      "pronunciation": "purgo-auris",
+      "pronunciation": "PURG-oh AUR-is",
       "type_of_spell": "Counter-Spell",
       "caster_level": "Intermediate (Years 3–4)",
       "legality": "Ministry-approved",
@@ -8445,7 +8445,7 @@
     {
       "name": "Enchantment Counter-Spell",
       "incantation": "Surgito",
-      "pronunciation": "surgito",
+      "pronunciation": "surg-IT-oh",
       "type_of_spell": "Counter-Spell",
       "caster_level": "Intermediate (Years 3–4)",
       "legality": "Ministry-approved",
@@ -8472,7 +8472,7 @@
     {
       "name": "Eradication Spell",
       "incantation": "Deletrius",
-      "pronunciation": "deletrius",
+      "pronunciation": "del-ETR-ius",
       "type_of_spell": "Counter-Spell",
       "caster_level": "Intermediate (Years 3–4)",
       "legality": "Ministry-approved",
@@ -8499,7 +8499,7 @@
     {
       "name": "Eye Curse Counter",
       "incantation": "Purgo Oculus",
-      "pronunciation": "purgo-oculus",
+      "pronunciation": "PURG-oh oc-UL-us",
       "type_of_spell": "Counter-Spell",
       "caster_level": "Intermediate (Years 3–4)",
       "legality": "Ministry-approved",
@@ -8526,7 +8526,7 @@
     {
       "name": "Finger Jinx Counter",
       "incantation": "Exonero Digi",
-      "pronunciation": "exonero-digi",
+      "pronunciation": "ex-on-ER-oh DIG-ih",
       "type_of_spell": "Counter-Spell",
       "caster_level": "Intermediate (Years 3–4)",
       "legality": "Ministry-approved",
@@ -8553,7 +8553,7 @@
     {
       "name": "General Counter‑Spell",
       "incantation": "Finite / Finite Incantatem",
-      "pronunciation": "fi‑NEE‑tay / fi‑NEE‑tay in‑can‑TAH‑tem",
+      "pronunciation": "fi-NEE-tay / fi-NEE-tay in-can-TAH-tem",
       "type_of_spell": "Counter‑Spells",
       "caster_level": "Intermediate (Years 3–4)",
       "legality": "Ministry-approved",
@@ -8582,7 +8582,7 @@
     {
       "name": "Head Shrink Spell",
       "incantation": "Redactum Skullus",
-      "pronunciation": "redactum-skullus",
+      "pronunciation": "red-ACT-um SKULL-us",
       "type_of_spell": "Counter-Spell",
       "caster_level": "Intermediate (Years 3–4)",
       "legality": "Ministry-approved",
@@ -8636,7 +8636,7 @@
     {
       "name": "Minor Healing Charm",
       "incantation": "Reparifors",
-      "pronunciation": "reparifors",
+      "pronunciation": "rep-ar-IF-ors",
       "type_of_spell": "Counter-Spell",
       "caster_level": "Intermediate (Years 3–4)",
       "legality": "Ministry-approved",
@@ -8663,7 +8663,7 @@
     {
       "name": "Release Body Levitation",
       "incantation": "Liberacorpus",
-      "pronunciation": "liberacorpus",
+      "pronunciation": "lib-er-ac-ORP-us",
       "type_of_spell": "Counter-Spell",
       "caster_level": "Intermediate (Years 3–4)",
       "legality": "Ministry-approved",
@@ -8719,7 +8719,7 @@
     {
       "name": "Revealing Spell",
       "incantation": "Revelio",
-      "pronunciation": "revelio",
+      "pronunciation": "rev-EL-ioh",
       "type_of_spell": "Counter-Spell",
       "caster_level": "Intermediate (Years 3–4)",
       "legality": "Ministry-approved",
@@ -8746,7 +8746,7 @@
     {
       "name": "Revert Charm",
       "incantation": "Reverte",
-      "pronunciation": "reverte",
+      "pronunciation": "rev-ERT-eh",
       "type_of_spell": "Counter-Spell",
       "caster_level": "Intermediate (Years 3–4)",
       "legality": "Ministry-approved",
@@ -8773,7 +8773,7 @@
     {
       "name": "Reviving Spell",
       "incantation": "Rennervate",
-      "pronunciation": "rennervate",
+      "pronunciation": "renn-erv-AT-eh",
       "type_of_spell": "Counter-Spell",
       "caster_level": "Intermediate (Years 3–4)",
       "legality": "Ministry-approved",
@@ -8800,7 +8800,7 @@
     {
       "name": "Shield Charm",
       "incantation": "Protego",
-      "pronunciation": "pro‑TAY‑goh",
+      "pronunciation": "pro-TAY-goh",
       "type_of_spell": "Counter‑Spells",
       "caster_level": "Advanced (Years 5–7)",
       "legality": "Ministry-approved",
@@ -8829,7 +8829,7 @@
     {
       "name": "Specialis Revelio",
       "incantation": "Scarpin's Revelaspell",
-      "pronunciation": "scarpin-s-revelaspell",
+      "pronunciation": "SCARP-ins rev-el-ASP-ell",
       "type_of_spell": "Counter-Spell",
       "caster_level": "Intermediate (Years 3–4)",
       "legality": "Ministry-approved",
@@ -8856,7 +8856,7 @@
     {
       "name": "Spider Repelling Spell",
       "incantation": "Arania Exumai",
-      "pronunciation": "arania-exumai",
+      "pronunciation": "ar-AN-iah ex-UM-aih",
       "type_of_spell": "Counter-Spell",
       "caster_level": "Intermediate (Years 3–4)",
       "legality": "Ministry-approved",
@@ -8883,7 +8883,7 @@
     {
       "name": "The Clotting Spell",
       "incantation": "Coagulum",
-      "pronunciation": "coagulum",
+      "pronunciation": "coag-UL-um",
       "type_of_spell": "Counter-Spell",
       "caster_level": "Intermediate (Years 3–4)",
       "legality": "Ministry-approved",
@@ -8939,7 +8939,7 @@
     {
       "name": "Weather-Modifying Counter-Charm",
       "incantation": "Meteolojinx Recanto",
-      "pronunciation": "meteolojinx-recanto",
+      "pronunciation": "met-eol-OJ-inx rec-ANT-oh",
       "type_of_spell": "Counter-Spell",
       "caster_level": "Intermediate (Years 3–4)",
       "legality": "Ministry-approved",
@@ -8966,7 +8966,7 @@
     {
       "name": "Wiping Spell",
       "incantation": "Tergeo",
-      "pronunciation": "tergeo",
+      "pronunciation": "TERG-eoh",
       "type_of_spell": "Counter-Spell",
       "caster_level": "Intermediate (Years 3–4)",
       "legality": "Ministry-approved",
@@ -8993,7 +8993,7 @@
     {
       "name": "Wound Healing Charm",
       "incantation": "Vulnera Sanentur",
-      "pronunciation": "vulnera-sanentur",
+      "pronunciation": "vuln-ER-ah san-ENT-ur",
       "type_of_spell": "Counter-Spell",
       "caster_level": "Intermediate (Years 3–4)",
       "legality": "Ministry-approved",
@@ -9022,7 +9022,7 @@
     {
       "name": "Anapneo",
       "incantation": "Anapneo",
-      "pronunciation": "ah‑NAP‑nee‑oh",
+      "pronunciation": "ah-NAP-nee-oh",
       "type_of_spell": "Healing Spells",
       "caster_level": "Advanced (Years 5–7)",
       "legality": "Ministry-approved",
@@ -9051,7 +9051,7 @@
     {
       "name": "Bandaging Charm",
       "incantation": "Ferula",
-      "pronunciation": "fer‑ROO‑lah",
+      "pronunciation": "fer-ROO-lah",
       "type_of_spell": "Healing Spells",
       "caster_level": "Intermediate (Years 3–4)",
       "legality": "Ministry-approved",
@@ -9080,7 +9080,7 @@
     {
       "name": "Episkey",
       "incantation": "Episkey",
-      "pronunciation": "eh‑PIS‑kee",
+      "pronunciation": "eh-PIS-kee",
       "type_of_spell": "Healing Spells",
       "caster_level": "Intermediate (Years 3–4)",
       "legality": "Ministry-approved",
@@ -9190,7 +9190,7 @@
     {
       "name": "Disarming Charm",
       "incantation": "Expelliarmus",
-      "pronunciation": "ex‑PEL‑ee‑AR‑mus",
+      "pronunciation": "ex-PEL-ee-AR-mus",
       "type_of_spell": "Dueling Spells",
       "caster_level": "Intermediate (Years 3–4)",
       "legality": "Ministry-approved",
@@ -9244,7 +9244,7 @@
     {
       "name": "Stunning Spell",
       "incantation": "Stupefy",
-      "pronunciation": "STEW‑puh‑fye",
+      "pronunciation": "STEW-puh-fye",
       "type_of_spell": "Dueling Spells",
       "caster_level": "Advanced (Years 5–7)",
       "legality": "Restricted",
@@ -9275,7 +9275,7 @@
     {
       "name": "Cruciatus Curse",
       "incantation": "Crucio",
-      "pronunciation": "KROO‑see‑oh",
+      "pronunciation": "KROO-see-oh",
       "type_of_spell": "Forbidden Spells",
       "caster_level": "Dark Arts (Staff‑approved plots only)",
       "legality": "Criminal (Forbidden)",
@@ -9304,7 +9304,7 @@
     {
       "name": "Imperius Curse",
       "incantation": "Imperio",
-      "pronunciation": "im‑PEER‑ee‑oh",
+      "pronunciation": "im-PEER-ee-oh",
       "type_of_spell": "Forbidden Spells",
       "caster_level": "Dark Arts (Staff‑approved plots only)",
       "legality": "Criminal (Forbidden)",
@@ -9333,7 +9333,7 @@
     {
       "name": "Killing Curse",
       "incantation": "Avada Kedavra",
-      "pronunciation": "uh‑VAH‑dah keh‑DAH‑vrah",
+      "pronunciation": "uh-VAH-dah keh-DAH-vrah",
       "type_of_spell": "Forbidden Spells",
       "caster_level": "Dark Arts (Staff‑approved plots only)",
       "legality": "Criminal (Forbidden)",
@@ -9364,7 +9364,7 @@
     {
       "name": "Bookbinding Charm",
       "incantation": "Librus Nexus",
-      "pronunciation": "LEE‑bruss NEK‑suss",
+      "pronunciation": "LEE-bruss NEK-suss",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Intermediate (Years 3–4)",
       "legality": "Ministry-approved",
@@ -9389,14 +9389,14 @@
     {
       "name": "Skywrite Charm",
       "incantation": "Caelum Scribo",
-      "pronunciation": "KYE‑loom SKREE‑boh",
+      "pronunciation": "KYE-loom SKREE-boh",
       "type_of_spell": "Charmwork → Enchantment",
       "caster_level": "Intermediate (Years 3–4)",
       "legality": "Ministry-approved",
       "inventor_and_year": "Marcella Hemmingway, 1889",
       "wand_movements": "Trace the desired letters in the air, finishing each word with a flourish.",
       "effect": "This charm allows the caster to write glowing words or symbols in the air or high above, where they remain visible for several minutes. It cannot create complex images and fades in strong sunlight or rain.",
-      "notes": "Ravenclaw alumna Marcella Hemmingway devised this charm in 1889 to send messages to friends across the Hogwarts grounds without risking parchment. The charm is popular among creative Ravenclaws for displaying riddles or house mottos in the sky.",
+      "notes": "Ravenclaw Marcella Hemmingway devised this charm in 1889 to send messages to friends across the Hogwarts grounds without risking parchment. The charm is popular among creative Ravenclaws for displaying riddles or house mottos in the sky.",
       "oc": true,
       "slug": "skywrite-charm-caelum-scribo",
       "tags": [
