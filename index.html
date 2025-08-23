@@ -162,7 +162,7 @@
 
       <main class="panel" role="region" aria-live="polite">
         <header><h3 id="subjectTitle">Loading…</h3></header>
-        <div class="how"><strong>RP use:</strong> Choose a subject, then search or filter. Keep casting within your character’s allowed year group/difficulty. Dark Arts &amp; Unforgivables require admin-approved plots. OC spells show only in Canon+OC mode after staff approval.</div>
+        <div class="how"><strong>RP use:</strong> Choose a subject, then search or filter. Keep casting within your character’s allowed year group/difficulty. Dark Arts & Unforgivables require admin-approved plots. OC spells show only in Canon+OC mode after staff approval.</div>
         <section id="list" class="list"><div class="empty">Loading…</div></section>
       </main>
     </div>
@@ -173,7 +173,7 @@
   <script>
   /** CONFIG **/
   const DATA_URL = 'spells-data.json';
-  const EDIT_DATA_URL = 'https://github.com/grimoirestreet/spellbook/edit/main/spells-data.json';
+  const EDIT_DATA_URL = 'https://github.com/YOURUSER/YOURREPO/edit/main/spells-data.json';
   document.getElementById('editLink').href = EDIT_DATA_URL;
 
   /** DOM helpers **/
@@ -212,16 +212,11 @@
   function allowedByYear(dif) {
     if (!state.year) return true;
     switch (state.year) {
-      case 'y12':
-        return dif === 'Beginner';
-      case 'y34':
-        return ['Beginner', 'Intermediate'].includes(dif);
-      case 'y57':
-        return ['Beginner', 'Intermediate', 'Advanced'].includes(dif);
-      case 'post':
-        return true;
-      default:
-        return true;
+      case 'y12': return dif === 'Beginner';
+      case 'y34': return ['Beginner','Intermediate'].includes(dif);
+      case 'y57': return ['Beginner','Intermediate','Advanced'].includes(dif);
+      case 'post': return true;
+      default: return true;
     }
   }
 
@@ -239,10 +234,7 @@
         sp.wand,
         sp.notes,
         sp.subject,
-      ]
-        .filter(Boolean)
-        .join(' ')
-        .toLowerCase();
+      ].filter(Boolean).join(' ').toLowerCase();
       if (!blob.includes(state.q)) return false;
     }
     return true;
@@ -266,14 +258,22 @@
 
     const meta = document.createElement('div');
     meta.className = 'meta';
+    // difficulty
     const pill1 = document.createElement('span');
     pill1.className = 'pill';
     pill1.textContent = sp.difficulty || '—';
     meta.appendChild(pill1);
+    // creator/inventor
     const pill2 = document.createElement('span');
     pill2.className = 'pill';
     pill2.textContent = sp.creator || '—';
     meta.appendChild(pill2);
+    // legality
+    const pill3 = document.createElement('span');
+    pill3.className = 'pill';
+    pill3.textContent = sp.legality || '—';
+    meta.appendChild(pill3);
+    // OC indicator
     if (sp.oc) {
       const oc = document.createElement('span');
       oc.className = 'pill';
@@ -289,10 +289,12 @@
     specs.className = 'spec grid-2';
     specs.innerHTML = `
       <dl>
+        <dt>Incantation</dt><dd>${sp.incantation || '—'}</dd>
         <dt>Pronunciation</dt><dd>${sp.pron || '—'}</dd>
         <dt>Wand movement</dt><dd>${sp.wand || '—'}</dd>
       </dl>
       <dl>
+        <dt>Type</dt><dd>${sp.type_of_spell || '—'}</dd>
         <dt>Effect</dt><dd>${sp.effect || '—'}</dd>
         <dt>Notes</dt><dd class="notes">${sp.notes || ''}</dd>
       </dl>`;
@@ -398,6 +400,10 @@
             name: s.name,
             difficulty,
             creator: s.inventor_and_year || 'Unknown',
+            legality: s.legality || 'Unknown',
+            incantation: s.incantation || '',
+            type_of_spell: s.type_of_spell || '',
+            tags: s.tags || [],
             pron: s.pronunciation,
             wand: s.wand_movements,
             effect: s.effect,
