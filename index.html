@@ -1,336 +1,256 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Grimoire Street • Spell Compendium (1890s)</title>
-<style>
-  :root{
-    --bg:#15181d;          /* page */
-    --panel:#1e232a;       /* main cards */
-    --side:#1b1f25;        /* sidebar */
-    --ink:#eef0f3;         /* text */
-    --muted:#aab0ba;       /* secondary text */
-    --line:#282d35;        /* hairline */
-    --accent:#d3ba7c;      /* bronze */
-    --pill:#262b33;        /* chip */
-    --pill-soft:#222730;   
-  }
-  html,body{background:var(--bg); color:var(--ink); margin:0; overflow-y:auto}
-  body{font-family:"Inter",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial; line-height:1.55}
-  *,*::before,*::after{box-sizing:border-box}
-  .wrap{max-width:1120px; margin:28px auto; padding:0 16px}
-
-  /* Header */
-  h1{margin:0 0 2px 0; font-size:clamp(26px,3.2vw,38px); font-weight:700; letter-spacing:.01em; color:var(--accent)}
-  .sub{color:var(--muted); font-size:14px}
-  .rule{height:1px; background:var(--line); margin:16px 0 18px}
-
-  /* Layout */
-  .grid{display:grid; grid-template-columns:300px 1fr; gap:18px; align-items:start}
-  @media(max-width:980px){.grid{grid-template-columns:1fr}}
-
-  /* Sidebar */
-  .side{position:static; align-self:start; background:var(--side); border:1px solid var(--line); border-radius:14px; padding:12px}
-  @media(min-width:981px){.side.is-sticky{position:sticky; top:12px; will-change:top}}
-  .side h2{margin:0 0 10px 0; font-size:13px; color:var(--muted); letter-spacing:.04em; text-transform:uppercase}
-  .field{display:grid; gap:6px; margin-bottom:12px}
-  .field label{font-size:12px; color:var(--muted)}
-  .input, select{width:100%; background:var(--panel); color:var(--ink); border:1px solid var(--line); border-radius:10px; padding:10px 12px; font-size:14px; line-height:1.2}
-  .input::placeholder{color:#c6cbd3; opacity:.85}
-  .seg{display:flex; gap:8px}
-  .seg button{flex:1; background:var(--pill); border:1px solid var(--line); color:var(--ink); padding:8px 10px; border-radius:999px; cursor:pointer; font-size:13px}
-  .seg button[aria-pressed="true"]{background:var(--accent); color:#0d0e10; font-weight:600}
-
-  .legend{border-top:1px solid var(--line); margin-top:8px; padding-top:10px}
-  .legend h3{margin:0 0 6px 0; font-size:12px; color:var(--muted); letter-spacing:.03em; text-transform:uppercase}
-  .legend-top{background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:10px 12px; margin:12px 0 18px}
-  .chips{display:flex; flex-wrap:wrap; gap:6px}
-  .chip{background:var(--pill-soft); border:1px solid var(--line); color:#d9dde6; padding:6px 10px; border-radius:999px; font-size:12px}
-  .chip[data-lvl="Beginner"]{color:#cfe8ff}
-  .chip[data-lvl="Intermediate"]{color:#e8d6ff}
-  .chip[data-lvl="Advanced"]{color:#ffe7c7}
-  .chip[data-lvl="Expert"]{color:#ffbdbd}
-
-  .tabs{display:flex; flex-direction:column; border-top:1px solid var(--line); margin-top:10px}
-  .tabs button{appearance:none; background:transparent; border:none; text-align:left; padding:10px 12px; border-bottom:1px solid var(--line); cursor:pointer; color:#cfd5de; font-size:14px}
-  .tabs button[aria-current="true"]{background:var(--panel); color:var(--accent); font-weight:600}
-
-  /* Panel */
-  .panel{background:var(--panel); border:1px solid var(--line); border-radius:14px; overflow:hidden; align-self:start}
-  .panel header{padding:14px; border-bottom:1px solid var(--line)}
-  .panel h3{margin:0; font-size:18px; font-weight:700; letter-spacing:.01em; color:var(--accent)}
-  .how{padding:10px 14px; border-bottom:1px dashed var(--line); color:var(--muted); font-size:14px}
-
-  /* List */
-  .list{display:grid}
-  details.item{border-bottom:1px solid var(--line)}
-  details.item[open] summary{background:#1d2128}
-  summary{list-style:none; cursor:pointer; padding:12px 14px; display:grid; grid-template-columns: 1fr auto; gap:10px; align-items:center; scroll-margin-top:16px}
-  summary::-webkit-details-marker{display:none}
-  .name{font-weight:600}
-  .namewrap{min-width:0}
-  .effect-preview{font-size:13px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:2px}
-  .pill{display:inline-block; padding:3px 8px; border-radius:999px; background:var(--pill); border:1px solid var(--line); font-size:12px; color:#cfd5de}
-  .meta{display:flex; gap:8px; align-items:center}
-  .body{padding:10px 14px 14px 14px}
-  .grid-2{display:grid; grid-template-columns:1fr 1fr; gap:12px}
-  @media(max-width:700px){.grid-2{grid-template-columns:1fr}}
-  .spec{background:#1d2128; border:1px solid var(--line); border-radius:10px; padding:10px}
-  .spec dt{font-size:12px; color:#c9ced8}
-  .spec dd{margin:0 0 8px 0}
-  .notes{color:#b7bdc7; font-size:13px; margin-top:8px}
-  .empty{padding:16px; color:#b7bdc7}
-
-  .footer{margin-top:16px; color:#b7bdc7; font-size:12px; text-align:center}
-  a{color:var(--accent)}
-  .helper{margin-top:10px;font-size:12px;color:var(--muted)}
-</style>
-</head>
-<body>
-  <div class="wrap">
-    <header>
-      <h1>Grimoire Street • Spell Compendium</h1>
-      <div class="sub">Hogwarts Legacy era (1890s). Canon-only by default. Toggle OC to include approved originals.</div>
-    </header>
-    <div class="rule" aria-hidden="true"></div>
-
-    <section class="legend legend-top" aria-label="Legend">
-      <h3>Legend • who can cast?</h3>
-      <div class="chips">
-        <span class="chip" data-lvl="Beginner">Beginner → Years 1–2</span>
-        <span class="chip" data-lvl="Intermediate">Intermediate → Years 3–4</span>
-        <span class="chip" data-lvl="Advanced">Advanced → Years 5–7</span>
-        <span class="chip" data-lvl="Expert">Expert → Post-grad only</span>
-        <span class="chip">Dark Arts: staff-approved plots only</span>
-      </div>
-    </section>
-
-    <div class="grid">
-      <aside class="side" role="complementary">
-        <h2>Browse</h2>
-
-        <div class="field">
-          <label for="q">Search</label>
-          <input id="q" class="input" type="text" placeholder="Search name, effect, creator, pronunciation, wand" />
-        </div>
-
-        <div class="field">
-          <label for="dif">Difficulty</label>
-          <select id="dif">
-            <option value="">All</option>
-            <option>Beginner</option>
-            <option>Intermediate</option>
-            <option>Advanced</option>
-            <option>Expert</option>
-          </select>
-        </div>
-
-        <div class="field">
-          <label for="year">Year group</label>
-          <select id="year">
-            <option value="">Any</option>
-            <option value="y12">Years 1–2</option>
-            <option value="y34">Years 3–4</option>
-            <option value="y57">Years 5–7</option>
-            <option value="post">Post-grad / Adult</option>
-          </select>
-        </div>
-
-        <div class="field">
-          <label>Mode</label>
-          <div class="seg" role="group" aria-label="Mode">
-            <button id="modeCanon" aria-pressed="true">Canon</button>
-            <button id="modeAll" aria-pressed="false">Canon + OC</button>
-          </div>
-        </div>
-
-        <div class="tabs" role="tablist" aria-label="Subjects"></div>
-
-        <div class="helper">
-          Staff shortcut: <a id="editLink" href="#" target="_blank" rel="noopener">Edit spells-data.json</a>
-        </div>
-      </aside>
-
-      <main class="panel" role="region" aria-live="polite">
-        <header><h3 id="subjectTitle">Loading…</h3></header>
-        <div class="how"><strong>RP use:</strong> Choose a subject, then search or filter. Keep casting within your character’s allowed year group/difficulty. Dark Arts & Unforgivables require admin-approved plots. OC spells show only in Canon+OC mode after staff approval.</div>
-        <section id="list" class="list"><div class="empty">Loading…</div></section>
-      </main>
-    </div>
-
-    <p class="footer">Report missing or era-inaccurate spells to staff.</p>
-  </div>
-
 <script>
 /** CONFIG **/
-const DATA_URL = 'spells-data.json'; // root-level JSON file (no folders)
-const EDIT_DATA_URL = 'https://github.com/YOURUSER/YOURREPO/edit/main/spells-data.json'; // <-- replace for your repo
+const DATA_URL = 'spells-data.json';
+const EDIT_DATA_URL =
+  'https://github.com/YOURUSER/YOURREPO/edit/main/spells-data.json';
 document.getElementById('editLink').href = EDIT_DATA_URL;
 
 /** DOM helpers **/
-const $ = s => document.querySelector(s);
+const $ = (s) => document.querySelector(s);
 const sideTabs = document.querySelector('.tabs');
 const listEl = $('#list');
 const subjectTitle = $('#subjectTitle');
 const sideEl = document.querySelector('.side');
 
-/** Sticky aside when it comfortably fits the viewport **/
-function updateSticky(){
-  const fits = window.innerWidth >= 981 && (sideEl.scrollHeight + 24) <= window.innerHeight;
-  sideEl.classList.toggle('is-sticky', fits);
+/** State & data **/
+let SUBJECTS = []; // { key, name, count }
+let SPELLS = [];
+const state = { q: '', dif: '', year: '', subject: '', oc: false };
+
+/** Utility: convert 'charmwork_enchantment' to 'Charmwork Enchantment' */
+function toLabel(key) {
+  return key
+    .split('_')
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ');
 }
 
-/** State & data **/
-let SUBJECTS = [];
-let SPELLS   = []; // flat list: {subject, name, difficulty, creator, pron, wand, effect, notes, oc?}
-const state  = { q:'', dif:'', year:'', subject:'', oc:false };
-
-/** UI builders **/
-function buildTabs(){
-  sideTabs.innerHTML='';
-  SUBJECTS.forEach(s=>{
-    const b=document.createElement('button');
-    b.textContent=s;
-    b.setAttribute('aria-current', String(state.subject===s));
-    b.addEventListener('click', ()=>{ state.subject=s; render(); });
-    sideTabs.appendChild(b);
+/** Build sidebar buttons with counts */
+function buildTabs() {
+  sideTabs.innerHTML = '';
+  SUBJECTS.forEach(({ key, name, count }) => {
+    const btn = document.createElement('button');
+    btn.textContent = `${name} (${count})`;
+    btn.setAttribute('aria-current', String(state.subject === key));
+    btn.addEventListener('click', () => {
+      state.subject = key;
+      render();
+    });
+    sideTabs.appendChild(btn);
   });
 }
 
-function allowedByYear(dif){
-  if(!state.year) return true;
-  const lvl = dif||'';
-  switch(state.year){
-    case 'y12': return lvl==='Beginner';
-    case 'y34': return ['Beginner','Intermediate'].includes(lvl);
-    case 'y57': return ['Beginner','Intermediate','Advanced'].includes(lvl);
-    case 'post': return true;
-    default: return true;
+/** Determine if a spell is allowed for the current year filter */
+function allowedByYear(dif) {
+  if (!state.year) return true;
+  switch (state.year) {
+    case 'y12':
+      return dif === 'Beginner';
+    case 'y34':
+      return ['Beginner', 'Intermediate'].includes(dif);
+    case 'y57':
+      return ['Beginner', 'Intermediate', 'Advanced'].includes(dif);
+    case 'post':
+      return true;
+    default:
+      return true;
   }
 }
 
-function matches(sp){
-  if(state.dif && sp.difficulty!==state.dif) return false;
-  if(!allowedByYear(sp.difficulty)) return false;
-  if(!state.oc && sp.oc) return false; // hide OC unless mode toggled
-  if(state.q){
-    const blob=[sp.name,sp.effect,sp.creator,sp.pron,sp.wand,sp.notes,sp.subject]
-      .filter(Boolean).join(' ').toLowerCase();
-    if(!blob.includes(state.q)) return false;
+/** Filter logic for search, difficulty, year, and OC toggle */
+function matches(sp) {
+  if (state.dif && sp.difficulty !== state.dif) return false;
+  if (!allowedByYear(sp.difficulty)) return false;
+  if (!state.oc && sp.oc) return false;
+  if (state.q) {
+    const blob = [
+      sp.name,
+      sp.effect,
+      sp.creator,
+      sp.pron,
+      sp.wand,
+      sp.notes,
+      sp.subject,
+    ]
+      .filter(Boolean)
+      .join(' ')
+      .toLowerCase();
+    if (!blob.includes(state.q)) return false;
   }
   return true;
 }
 
-function makeRow(sp){
-  const it=document.createElement('details'); it.className='item';
-  const sum=document.createElement('summary');
+/** Render a single spell row */
+function makeRow(sp) {
+  const it = document.createElement('details');
+  it.className = 'item';
+  const sum = document.createElement('summary');
 
-  const nameWrap=document.createElement('div'); nameWrap.className='namewrap';
-  const name=document.createElement('div'); name.className='name'; name.textContent=sp.name;
-  const preview=document.createElement('div'); preview.className='effect-preview'; preview.textContent=sp.effect||'—';
+  const nameWrap = document.createElement('div');
+  nameWrap.className = 'namewrap';
+  const name = document.createElement('div');
+  name.className = 'name';
+  name.textContent = sp.name;
+  const preview = document.createElement('div');
+  preview.className = 'effect-preview';
+  preview.textContent = sp.effect || '—';
   nameWrap.append(name, preview);
 
-  const meta=document.createElement('div'); meta.className='meta';
-  const pill1=document.createElement('span'); pill1.className='pill'; pill1.textContent=sp.difficulty||'—'; meta.appendChild(pill1);
-  const pill2=document.createElement('span'); pill2.className='pill'; pill2.textContent=sp.creator||'—'; meta.appendChild(pill2);
-  if(sp.oc){ const oc=document.createElement('span'); oc.className='pill'; oc.textContent='OC'; meta.appendChild(oc); }
+  const meta = document.createElement('div');
+  meta.className = 'meta';
+  const pill1 = document.createElement('span');
+  pill1.className = 'pill';
+  pill1.textContent = sp.difficulty || '—';
+  meta.appendChild(pill1);
+  const pill2 = document.createElement('span');
+  pill2.className = 'pill';
+  pill2.textContent = sp.creator || '—';
+  meta.appendChild(pill2);
+  if (sp.oc) {
+    const oc = document.createElement('span');
+    oc.className = 'pill';
+    oc.textContent = 'OC';
+    meta.appendChild(oc);
+  }
 
   sum.append(nameWrap, meta);
 
-  const body=document.createElement('div'); body.className='body';
-  const specs=document.createElement('div'); specs.className='spec grid-2';
-  specs.innerHTML=`
+  const body = document.createElement('div');
+  body.className = 'body';
+  const specs = document.createElement('div');
+  specs.className = 'spec grid-2';
+  specs.innerHTML = `
     <dl>
-      <dt>Pronunciation</dt><dd>${sp.pron||'—'}</dd>
-      <dt>Wand movement</dt><dd>${sp.wand||'—'}</dd>
+      <dt>Pronunciation</dt><dd>${sp.pron || '—'}</dd>
+      <dt>Wand movement</dt><dd>${sp.wand || '—'}</dd>
     </dl>
     <dl>
-      <dt>Effect</dt><dd>${sp.effect||'—'}</dd>
-      <dt>Notes</dt><dd class="notes">${sp.notes||''}</dd>
+      <dt>Effect</dt><dd>${sp.effect || '—'}</dd>
+      <dt>Notes</dt><dd class="notes">${sp.notes || ''}</dd>
     </dl>`;
   body.appendChild(specs);
   it.append(sum, body);
   return it;
 }
 
-function render(){
-  [...sideTabs.children].forEach(btn=> btn.setAttribute('aria-current', String(btn.textContent===state.subject)));
-  subjectTitle.textContent = state.subject || 'Spells';
+/** Render the list based on current state */
+function render() {
+  // Update tab highlighting
+  SUBJECTS.forEach(({ key }, idx) => {
+    const btn = sideTabs.children[idx];
+    btn.setAttribute('aria-current', String(key === state.subject));
+  });
 
+  // Update subject title
+  const active = SUBJECTS.find((s) => s.key === state.subject);
+  subjectTitle.textContent = active ? active.name : 'Spells';
+
+  // Filter and sort spells
   const items = SPELLS
-    .filter(s=> s.subject===state.subject)
+    .filter((s) => s.subject === state.subject)
     .filter(matches)
-    .sort((a,b)=> a.name.localeCompare(b.name));
+    .sort((a, b) => a.name.localeCompare(b.name));
 
-  listEl.innerHTML='';
-  if(!items.length){
-    const d=document.createElement('div'); d.className='empty';
-    d.innerHTML='No entries. Edit <code>spells-data.json</code> or loosen filters.';
+  listEl.innerHTML = '';
+  if (!items.length) {
+    const d = document.createElement('div');
+    d.className = 'empty';
+    d.innerHTML = 'No entries. Edit <code>spells-data.json</code> or loosen filters.';
     listEl.appendChild(d);
     return;
   }
-  items.forEach(sp=> listEl.appendChild(makeRow(sp)));
+  items.forEach((sp) => listEl.appendChild(makeRow(sp)));
 }
 
-/** Controls **/
-$('#q').addEventListener('input', e=>{ state.q=e.target.value.trim().toLowerCase(); render(); });
-$('#dif').addEventListener('change', e=>{ state.dif=e.target.value; render(); });
-$('#year').addEventListener('change', e=>{ state.year=e.target.value; render(); });
-$('#modeCanon').addEventListener('click', ()=>{ state.oc=false; $('#modeCanon').setAttribute('aria-pressed','true'); $('#modeAll').setAttribute('aria-pressed','false'); render(); });
-$('#modeAll').addEventListener('click', ()=>{ state.oc=true;  $('#modeAll').setAttribute('aria-pressed','true');  $('#modeCanon').setAttribute('aria-pressed','false'); render(); });
+/** Event listeners for search/filters/toggles */
+$('#q').addEventListener('input', (e) => {
+  state.q = e.target.value.trim().toLowerCase();
+  render();
+});
+$('#dif').addEventListener('change', (e) => {
+  state.dif = e.target.value;
+  render();
+});
+$('#year').addEventListener('change', (e) => {
+  state.year = e.target.value;
+  render();
+});
+$('#modeCanon').addEventListener('click', () => {
+  state.oc = false;
+  $('#modeCanon').setAttribute('aria-pressed', 'true');
+  $('#modeAll').setAttribute('aria-pressed', 'false');
+  render();
+});
+$('#modeAll').addEventListener('click', () => {
+  state.oc = true;
+  $('#modeAll').setAttribute('aria-pressed', 'true');
+  $('#modeCanon').setAttribute('aria-pressed', 'false');
+  render();
+});
 
-/** JSON loader that tolerates comments & trailing commas; supports two shapes **/
-async function boot(){
-  try{
-    const res = await fetch(DATA_URL, { cache:'no-store' });
-    if(!res.ok) throw new Error('HTTP '+res.status);
+/** Sticky aside handler */
+function updateSticky() {
+  const fits = window.innerWidth >= 981 && (sideEl.scrollHeight + 24) <= window.innerHeight;
+  sideEl.classList.toggle('is-sticky', fits);
+}
 
-    // read raw, strip BOM, block & line comments, and trailing commas
+/** JSON loader: fetch and transform your spells-data.json */
+async function boot() {
+  try {
+    const res = await fetch(DATA_URL, { cache: 'no-store' });
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+
+    // Read raw and strip BOM/comments/trailing commas
     let raw = await res.text();
-    raw = raw.replace(/\uFEFF/g,'');                // BOM
-    raw = raw.replace(/\/\*[\s\S]*?\*\//g,'');      // /* block comments */
-    raw = raw.replace(/(^|[^:])\/\/.*$/gm,'$1');    // // line comments (not after http:)
-    raw = raw.replace(/,\s*(\}|\])/g,'$1');         // trailing commas
-
+    raw = raw
+      .replace(/\uFEFF/g, '')
+      .replace(/\/\*[\s\S]*?\*\//g, '')
+      .replace(/(^|[^:])\/\/.*$/gm, '$1')
+      .replace(/,\s*(\}|\])/g, '$1');
     const data = JSON.parse(raw);
 
-    let subjects=[], spells=[];
-    if (Array.isArray(data.spells)) {
-      // flat list: { subjects:[], spells:[ {subject:"Charms", ...} ] }
-      spells = data.spells.map(s => ({ oc:false, ...s }));
-      subjects = (Array.isArray(data.subjects) && data.subjects.length)
-        ? data.subjects.slice()
-        : Array.from(new Set(spells.map(s=>s.subject))).sort();
-    } else {
-      // keyed by subject: { "Charms":[...], "Transfiguration":[...], ... }
-      subjects = Object.keys(data).sort();
-      subjects.forEach(sub=>{
-        (data[sub]||[]).forEach(s=>{
-          spells.push({ subject: sub, oc: !!s.oc, ...s });
+    const categories = [];
+    const spells = [];
+
+    // Your JSON is keyed by category (e.g. transfiguration, charmwork_enchantment)
+    Object.keys(data).forEach((key) => {
+      const list = Array.isArray(data[key]) ? data[key] : [];
+      categories.push({ key, name: toLabel(key), count: list.length });
+      list.forEach((s) => {
+        // Derive difficulty from caster_level
+        let difficulty = 'Beginner';
+        const level = s.caster_level || '';
+        if (/Intermediate/i.test(level)) difficulty = 'Intermediate';
+        else if (/Advanced/i.test(level)) difficulty = 'Advanced';
+        else if (/Expert|Dark/i.test(level)) difficulty = 'Expert';
+        spells.push({
+          subject: key,
+          oc: !!s.oc,
+          name: s.name,
+          difficulty,
+          creator: s.inventor_and_year || 'Unknown',
+          pron: s.pronunciation,
+          wand: s.wand_movements,
+          effect: s.effect,
+          notes: s.notes,
         });
       });
-    }
+    });
 
-    SUBJECTS = subjects;
+    SUBJECTS = categories;
     SPELLS = spells;
-
-    // pick default subject (Charms if present, else first)
-    state.subject = SUBJECTS.includes('Charms') ? 'Charms' : (SUBJECTS[0] || '');
-
+    state.subject = SUBJECTS.length ? SUBJECTS[0].key : '';
     buildTabs();
     render();
     updateSticky();
     window.addEventListener('resize', updateSticky);
-
-  }catch(err){
+  } catch (err) {
     listEl.innerHTML = `<div class="empty">
       Could not load <code>${DATA_URL}</code>. Ensure it exists at the repo root and the JSON is valid.
       <br><small>${String(err)}</small>
     </div>`;
   }
 }
+
 boot();
 </script>
-</body>
-</html>
