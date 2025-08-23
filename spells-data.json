@@ -244,7 +244,7 @@
     {
       "name": "Ducklifors",
       "incantation": "Ducklifors (though can be produced nonverbally)",
-      "pronunciation": "ducklifors-though-can-be-produced-nonverbally",
+      "pronunciation": "DUCK-lih-fors",
       "type_of_spell": "Transfiguration",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
@@ -253,7 +253,7 @@
       "effect": "When it hits the target, there is a burst of yellow light and when said light fades, the target is in the shape of a duck. Proficient users of this spell can control the appearance of the duck, the weight, and size.",
       "notes": "This spell is part of wizarding lore predating 1890 or has unknown origins. It should be practised under supervision, as misuse can lead to unintended effects.",
       "oc": false,
-      "slug": "ducklifors-ducklifors-though-can-be-produced-nonverbally",
+      "slug": "ducklifors-ducklifors",
       "tags": [
         "transfiguration"
       ],
@@ -377,7 +377,7 @@
     {
       "name": "Hairstyle Charm",
       "incantation": "Crinus Muto",
-      "pronunciation": "crinus-muto",
+      "pronunciation": "CREE-nus MYOO-toh",
       "type_of_spell": "Transfiguration",
       "caster_level": "Beginner (Years 1–2)",
       "legality": "Ministry-approved",
