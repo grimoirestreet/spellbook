@@ -94,7 +94,7 @@
     a{color:var(--accent)}
     .helper{margin-top:10px;font-size:12px;color:var(--muted)}
 
-    /* NEW: inline incantation badge for collapsed rows */
+    /* NEW: inline incantation badge (collapsed row) */
     .incantation-preview{margin-top:2px; font-size:12px; display:flex; gap:6px; align-items:center; color:#cfd5de}
     .incantation-preview .label{opacity:.7}
     .inc{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,"Liberation Mono","Courier New",monospace; background:var(--pill); border:1px solid var(--line); padding:2px 6px; border-radius:6px}
@@ -125,6 +125,7 @@
 
         <div class="field">
           <label for="q">Search</label>
+          <!-- NEW placeholder mentions incantation -->
           <input id="q" class="input" type="text" placeholder="Search name, incantation, effect, creator, pronunciation, wand" />
         </div>
 
@@ -233,7 +234,7 @@
     if (state.q) {
       const blob = [
         sp.name,
-        sp.incantation,     // NEW: search by incantation
+        sp.incantation,     // NEW: include incantation in search
         sp.effect,
         sp.creator,
         sp.pron,
@@ -250,6 +251,7 @@
   function makeRow(sp) {
     const it = document.createElement('details');
     it.className = 'item';
+
     const sum = document.createElement('summary');
 
     const nameWrap = document.createElement('div');
@@ -259,15 +261,14 @@
     name.className = 'name';
     name.textContent = sp.name;
 
-    // NEW: inline incantation badge in collapsed row (between name and effect)
+    // NEW: incantation badge shown under the name (collapsed)
     if (sp.incantation) {
       const incPrev = document.createElement('div');
       incPrev.className = 'incantation-preview';
       incPrev.innerHTML = `<span class="label">Incantation</span><code class="inc">${sp.incantation}</code>`;
-      nameWrap.appendChild(name);
-      nameWrap.appendChild(incPrev);
+      nameWrap.append(name, incPrev);
     } else {
-      nameWrap.appendChild(name);
+      nameWrap.append(name);
     }
 
     const preview = document.createElement('div');
@@ -300,6 +301,9 @@
       meta.appendChild(oc);
     }
 
+    // keep EXACT original summary structure: two direct children (nameWrap, meta)
+    sum.append(nameWrap, meta);
+
     const body = document.createElement('div');
     body.className = 'body';
     const specs = document.createElement('div');
@@ -315,16 +319,8 @@
         <dt>Effect</dt><dd>${sp.effect || '—'}</dd>
         <dt>Notes</dt><dd class="notes">${sp.notes || ''}</dd>
       </dl>`;
-
-    const sumWrap = document.createElement('div');
-    sumWrap.append(nameWrap);
-
-    const metaWrap = document.createElement('div');
-    metaWrap.append(meta);
-
     body.appendChild(specs);
 
-    sum.append(sumWrap, metaWrap);
     it.append(sum, body);
     return it;
   }
@@ -427,7 +423,7 @@
             difficulty,
             creator: s.inventor_and_year || 'Unknown',
             legality: s.legality || 'Unknown',
-            incantation: s.incantation || '',    // already parsed
+            incantation: s.incantation || '',
             type_of_spell: s.type_of_spell || '',
             tags: s.tags || [],
             pron: s.pronunciation,
